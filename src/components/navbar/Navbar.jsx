@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {RiMenu3Line,  RiCloseLine} from 'react-icons/ri';
-import {Container} from 'react-bootstrap';
 
 import './navbar.css';
 
