@@ -37,7 +37,7 @@ const Market = () => {
               <th>Name</th>
               <th>Price</th>
               <th>24 %</th>
-              <th>7 %</th>
+              <th>7d %</th>
               <th>Market Cap</th>
               <th>Volume(24)</th>
               <th>Circulating Supply</th>
@@ -50,8 +50,8 @@ const Market = () => {
                 <tr key={data.id}>
                   <td>{data.name.toUpperCase()} {data.symbol.toUpperCase()}</td>
                   <td>{formatter.format(data.current_price)}</td>
-                  <td>{formatter.format(data._24hChange)}</td>
-                  <td>{formatter.format(data._7dChange)}</td>
+                  <td>{formatter.format(data.price_change_24h.toFixed(2))}</td>
+                  <td>{formatter.format(data.price_change_percentage_7d_in_currency)}</td>
                   <td>{formatter.format(data.market_cap)}</td>
                   <td>{formatter.format(data.total_volume)}</td>
                   <td>{formatter.format(parseInt(data.total_volume / data.current_price))} {data.symbol.toUpperCase()}</td>
