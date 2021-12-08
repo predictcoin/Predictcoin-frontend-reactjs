@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./market.css";
+import { Table } from "react-bootstrap";
 
 const Market = () => {
   const [apiData, setApiData] = useState([]);

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import { Navbar, FAQ, Partner } from "./components";
-import { Header, About, Market, Footer } from "./containers";
+import { Navbar, Audit, FAQ, Partner, WhitePaper } from "./components";
+import { Header, About, Market, RoadMap, Footer } from "./containers";
 
 function App() {
   return (
@@ -11,6 +11,9 @@ function App() {
       <Market />
       <div className="gradient__bg">
         <About />
+        <WhitePaper />
+        <Audit />
+        <RoadMap />
       </div>
       <Partner />
       <FAQ />
