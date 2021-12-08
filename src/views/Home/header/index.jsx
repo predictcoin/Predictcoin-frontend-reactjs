@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 
-import vr from "../../assets/onlaptop.png";
+import vr from "../../../assets/pics/onlaptop.png";
 
 const Header = () => {
   return (

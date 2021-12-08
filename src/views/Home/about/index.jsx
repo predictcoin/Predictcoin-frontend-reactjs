@@ -1,10 +1,10 @@
 import React from 'react'
 import './about.css';
 
-import frame from '../../assets/Frame.png';
-import database from '../../assets/icons/database.png';
-import headphones from '../../assets/icons/headphones.png';
-import dollar_sign from '../../assets/icons/dollar-sign.png';
+import frame from '../../../assets/pics/Frame.png';
+import database from '../../../assets/icons/database.png';
+import headphones from '../../../assets/icons/headphones.png';
+import dollar_sign from '../../../assets/icons/dollar-sign.png';
 
 
 const About = () => {
