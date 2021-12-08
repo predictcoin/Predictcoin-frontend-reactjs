@@ -1,0 +1,37 @@
+.ptc__partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ptc__partner-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.ptc__partner-heading h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #1f2134;
+  text-align: center;
+}
+
+.ptc__partner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 5rem;
+}
+
+/* .ptc__partner-image-logo {} */
+
+.ptc__partner-image-logo img {
+  width: 100%;
+  max-width: 100%;
+  height: 50%;
+}

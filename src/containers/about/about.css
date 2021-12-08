@@ -87,6 +87,135 @@
   margin-bottom: 10rem;
 }
 
+/* White Paper  Styles*/
+.ptc__about-whitepaper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* First Div container */
+.ptc__about-whitepaper-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ptc__about-whitepaper-first h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.ptc__whitepaper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ptc__whitepaper-button a {
+  font-size: 1.5rem;
+}
+
+.ptc__whitepaper-button .ptc__whitepaper-pred {
+  padding: 20px 40px 20px 40px;
+  color: #fff;
+  background-color: #2e59f3;
+  border-radius: 10px;
+  border: 0;
+
+  margin: 1rem;
+}
+
+.ptc__whitepaper-button .ptc__whitepaper-bid {
+  padding: 20px 40px 20px 40px;
+  color: #fff;
+  background-color: #af3766;
+  border-radius: 10px;
+  border: 0;
+
+  margin: 1rem;
+}
+
+/* Second Div container */
+.ptc__about-whitepaper-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.ptc__about-whitepaper-second h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.ptc__audit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ptc__audit-button a {
+  font-size: 1.5rem;
+}
+
+.ptc__audit-button .ptc__audit-report {
+  padding: 20px 40px 20px 40px;
+  color: #fff;
+  background-color: #2e59f3;
+  border-radius: 10px;
+  border: 0;
+
+  margin: 1rem;
+}
+
+/* Roadmap Style */
+.ptc__about-roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.ptc__about-roadmap_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ptc__about-roadmap_heading h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.ptc__about-roadmap_heading_image {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.ptc__about-roadmap_heading_image img {
+  width: 100%;
+  /* max-width: 50%; */
+  height: auto;
+  vertical-align: middle;
+}
+
+.ptc__about-roadmap_heading_image-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 490px) {
   .content__padding {
     padding: 0;
@@ -158,6 +287,21 @@
     text-align: center;
 
     margin-bottom: 10rem;
+  }
+
+  .ptc__about-roadmap_heading_image img {
+    display: none;
+  }
+
+  .ptc__about-roadmap_heading_image-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  .ptc__about-roadmap_heading_image-mobile img {
+    width: 100%;
   }
 }
 
