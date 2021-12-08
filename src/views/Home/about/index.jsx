@@ -8,8 +8,6 @@ import dollar_sign from '../../../assets/icons/dollar-sign.png';
 
 
 const About = () => {
-
-
     return (
         <>
             <div className='ptc__about content__padding' id='about'>
