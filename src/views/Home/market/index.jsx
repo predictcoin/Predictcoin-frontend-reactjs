@@ -13,7 +13,7 @@ const Market = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(process.env.REACT_APP_COINGEC_API);
+      const { data } = await axios.get(process.env.REACT_APP_COINGECKO_API);
       setApiData(data);
     };
 
