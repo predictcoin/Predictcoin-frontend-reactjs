@@ -1,24 +1,8 @@
-import React from "react";
-import "./App.css";
-import { Navbar, Audit, FAQ, Partner, WhitePaper } from "./components";
-import { Header, About, Market, RoadMap, Footer } from "./containers";
+import Home from "./views/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <Market />
-      <div className="gradient__bg">
-        <About />
-        <WhitePaper />
-        <Audit />
-        <RoadMap />
-      </div>
-      <Partner />
-      <FAQ />
-      <Footer />
-    </div>
+    <Home />
   );
 }
 

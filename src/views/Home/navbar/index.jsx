@@ -3,7 +3,7 @@ import {RiMenu3Line,  RiCloseLine} from 'react-icons/ri';
 
 import './navbar.css';
 
-import logo from '../../assets/logoblue.png'
+import logo from '../../../assets/pics/logoblue.png'
 
 const Menu = () => {
     const [activePage, setActivePage] = useState('market')
