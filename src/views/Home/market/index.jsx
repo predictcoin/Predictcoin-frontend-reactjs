@@ -2,18 +2,17 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./market.css";
-import { Table } from "react-bootstrap";
+import Line from '../Line';
+
 
 const Market = () => {
   const [apiData, setApiData] = useState([]);
 
   const formatter = new Intl.NumberFormat("en-US");
 
-  console.log("ApiData: ", apiData);
-
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(process.env.REACT_APP_COINGECKO_API);
+      const { data } = await axios.get(process.env.REACT_APP_COINGEC_API);
       setApiData(data);
     };
 
@@ -55,7 +54,8 @@ const Market = () => {
                   <td>{formatter.format(data.market_cap)}</td>
                   <td>{formatter.format(data.total_volume)}</td>
                   <td>{formatter.format(parseInt(data.total_volume / data.current_price))} {data.symbol.toUpperCase()}</td>
-                  <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td>
+                  <td><Line/></td>
+                  {/* <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td> */}
                 </tr>
               );
             })}

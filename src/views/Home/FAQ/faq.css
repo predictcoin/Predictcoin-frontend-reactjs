@@ -1,0 +1,36 @@
+.ptc__faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 4rem 0;
+}
+
+.ptc__faq-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ptc__faq-heading h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1f2134;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.ptc__heading {
+  width: 80%;
+}
+
+.ptc__main-content {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 490px) {
+    .ptc__faq-heading h1 {
+        font-size: 3rem;
+    } 
+}

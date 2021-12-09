@@ -87,6 +87,7 @@
   margin-bottom: 10rem;
 }
 
+
 @media screen and (max-width: 490px) {
   .content__padding {
     padding: 0;

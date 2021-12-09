@@ -8,20 +8,19 @@ import Market from "./market";
 import RoadMap from "./roadmap";
 import Navbar from "./navbar";
 import WhitePaper from "./whitepaper";
-import Audit from "./audit";
 import Partner from "./partner";
 import FAQ from "./FAQ";
+import Line from "./Line";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Header />
-      {/* <Market /> */}
+      <Market />
       <div className="gradient__bg">
         <About />
         <WhitePaper />
-        <Audit />
         <RoadMap />
       </div>
       <Partner />
