@@ -20,7 +20,7 @@ import techrate from "../../../assets/partners/techrate.png";
 
 const Partner = () => {
   return (
-    <div className="ptc__partner">
+    <div className="ptc__partner" id='partner'>
       <div className="ptc__partner-heading">
         <h1>Our Partners</h1>
       </div>
@@ -29,50 +29,57 @@ const Partner = () => {
         <div className="ptc__partner-image">
             <img src={as} alt="as" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={babyswap_logo} alt="babyswap_logo" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={bscScan} alt="bscScan" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={bsctimes} alt="bsctimes" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={dapp} alt="dapp" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={dappcom} alt="dappcom" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={desert_big} alt="desert_big" />
         </div>
-        <div className="ptc__partner-image">
-            <img src={desertfinance} alt="desertfinance" />
-        </div>
+
         <div className="ptc__partner-image">
             <img src={ftx} alt="ftx" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={helmet_big} alt="helmet_big" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={images} alt="images" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={lcw} alt="lcw" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={nomics} alt="nomics" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={squid} alt="squid" />
         </div>
+
         <div className="ptc__partner-image">
             <img src={tech_big} alt="tech_big" />
-        </div>
-        <div className="ptc__partner-image">
-            <img src={techrate} alt="techrate" />
         </div>
       </div>
     </div>

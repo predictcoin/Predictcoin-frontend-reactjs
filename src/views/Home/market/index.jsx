@@ -20,7 +20,7 @@ const Market = () => {
   }, []);
 
   return (
-    <div className="ptc__market">
+    <div className="ptc__market" id='market'>
       <div className="ptc__market-text">
         <h1>Today's Cryptocurrency Prices by Market Cap</h1>
         <p>
@@ -54,8 +54,8 @@ const Market = () => {
                   <td>{formatter.format(data.market_cap)}</td>
                   <td>{formatter.format(data.total_volume)}</td>
                   <td>{formatter.format(parseInt(data.total_volume / data.current_price))} {data.symbol.toUpperCase()}</td>
-                  <td><Line/></td>
-                  {/* <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td> */}
+                  <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td>
+                  {/* <td><Line/></td> */}
                 </tr>
               );
             })}

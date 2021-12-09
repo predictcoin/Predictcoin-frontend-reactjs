@@ -5,7 +5,7 @@ import { Accordion } from "react-bootstrap";
 
 const FAQ = () => {
   return (
-    <div className="ptc__faq">
+    <div className="ptc__faq" id='faq'>
       <div className="ptc__faq-heading">
         <h1>Frequently Asked Question</h1>
       </div>

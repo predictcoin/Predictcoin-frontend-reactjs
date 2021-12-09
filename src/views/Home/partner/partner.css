@@ -21,6 +21,11 @@
   text-align: center;
 }
 
+/* Horizontal scrolling */
+.ptc__partner-images::-webkit-scrollbar {
+  width: 0;
+}
+
 .ptc__partner-images {
   display: flex;
   justify-content: center;
@@ -28,6 +33,7 @@
   flex-direction: row;
 
   margin-top: 2rem;
+  overflow-x: auto;
 }
 
 .ptc__partner-image img {

@@ -35,7 +35,9 @@ const Navbar = () => {
             <div className='ptc__navbar'>
                 <div className='ptc__navbar-links'>
                     <div className='ptc__navbar-links_logo'>
-                        <img src={logo} alt="logo" />
+                        <a href='/'>
+                            <img src={logo} alt="logo" />
+                        </a>
                     </div>
 
                     <div className='ptc__navbar-links_container'>
