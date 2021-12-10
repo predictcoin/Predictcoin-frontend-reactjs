@@ -10,7 +10,6 @@ import Navbar from "./navbar";
 import WhitePaper from "./whitepaper";
 import Partner from "./partner";
 import FAQ from "./FAQ";
-import Line from "./Line";
 
 function App() {
   return (

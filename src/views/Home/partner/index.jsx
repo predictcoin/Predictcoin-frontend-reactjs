@@ -8,7 +8,6 @@ import bsctimes from "../../../assets/partners/bsctimes.png";
 import dapp from "../../../assets/partners/dapp.png";
 import dappcom from "../../../assets/partners/dappcom.png";
 import desert_big from "../../../assets/partners/desert-big.png";
-import desertfinance from "../../../assets/partners/desertfinance.png";
 import ftx from "../../../assets/partners/ftx.png";
 import helmet_big from "../../../assets/partners/helmet.png";
 import images from "../../../assets/partners/images.png";
@@ -16,7 +15,6 @@ import lcw from "../../../assets/partners/lcw.png";
 import nomics from "../../../assets/partners/nomics.png";
 import squid from "../../../assets/partners/squid.png";
 import tech_big from "../../../assets/partners/tech-big.png";
-import techrate from "../../../assets/partners/techrate.png";
 
 const Partner = () => {
   return (

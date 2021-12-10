@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./market.css";
+import LineChart from "../Line";
 
 const Market = () => {
   const [apiData, setApiData] = useState([]);
-
   const formatter = new Intl.NumberFormat("en-US");
+
+
+  console.log("DATA: ", apiData);
 
   useEffect(() => {
     const getData = async () => {
@@ -18,7 +21,7 @@ const Market = () => {
   }, []);
 
   return (
-    <div className="ptc__market" id='market'>
+    <div className="ptc__market" id="market">
       <div className="ptc__market-text">
         <h1>Today's Cryptocurrency Prices by Market Cap</h1>
         <p>
@@ -45,15 +48,39 @@ const Market = () => {
             {apiData.map(data => {
               return (
                 <tr key={data.id}>
-                  <td>{data.name.toUpperCase()} {data.symbol.toUpperCase()}</td>
-                  <td>{formatter.format(data.current_price)}</td>
-                  <td>{formatter.format(data.price_change_24h.toFixed(2))}</td>
-                  <td>{formatter.format(data.price_change_percentage_7d_in_currency)}</td>
-                  <td>{formatter.format(data.market_cap)}</td>
-                  <td>{formatter.format(data.total_volume)}</td>
-                  <td>{formatter.format(parseInt(data.total_volume / data.current_price))} {data.symbol.toUpperCase()}</td>
-                  <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td>
-                  {/* <td><Line/></td> */}
+                  <td>
+                    {data.name.toUpperCase()} {data.symbol.toUpperCase()}
+                  </td>
+                  <td>
+                    {formatter.format(data.current_price)}
+                  </td>
+                  <td>
+                    {formatter.format(data.price_change_24h.toFixed(2))}
+                  </td>
+                  <td>
+                    {formatter.format(
+                      data.price_change_percentage_7d_in_currency
+                    )}
+                  </td>
+                  <td>
+                    {formatter.format(data.market_cap)}
+                  </td>
+                  <td>
+                    {formatter.format(data.total_volume)}
+                  </td>
+                  <td>
+                    {formatter.format(
+                      parseInt(data.total_volume / data.current_price)
+                    )}{" "}
+                    {data.symbol.toUpperCase()}
+                  </td>
+                  <td>
+                    <LineChart
+                      data1={data.sparkline_in_7d.price[0]}
+                      data2={data.sparkline_in_7d.price[1]}
+                    />
+                  </td>
+                  {/* <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td> */}
                 </tr>
               );
             })}
