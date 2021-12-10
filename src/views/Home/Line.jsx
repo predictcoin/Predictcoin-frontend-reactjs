@@ -1,20 +1,49 @@
 import React from "react";
 import { Chart } from "react-charts";
 
-const Line = ({data1, data2}) => {
+const Line = ({ dataset }) => {
+  // console.log("API RES:", dataset);
+
+  const chunk = arr => {
+    const size = 2;
+    const chunkedArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      const last = chunkedArr[chunkedArr.length - 1];
+      if (!last || last.length === size) {
+        chunkedArr.push([arr[i]]);
+      } else {
+        last.push(arr[i]);
+      }
+    }
+
+    return chunkedArr;
+  };
+
+  const indexOfDataset = dataset.map((__, index) => {
+    return index;
+  });
+
+  const resultDataSet = chunk(dataset);
+
+  const resultIndex = chunk(indexOfDataset);
+
+  console.log(resultIndex);
 
   const data = React.useMemo(
     () => [
       {
         label: "Series 1",
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
+        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
+        data: resultDataSet
       },
       {
         label: "Series 2",
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
+        // data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
+        data: resultIndex
       }
     ],
-    []
+    [resultDataSet, resultIndex]
   );
 
   const axes = React.useMemo(
@@ -28,7 +57,7 @@ const Line = ({data1, data2}) => {
   return (
     <div
       style={{
-        width: "300px",
+        width: "350px",
         height: "100px"
       }}
     >

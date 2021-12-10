@@ -76,8 +76,7 @@ const Market = () => {
                   </td>
                   <td>
                     <LineChart
-                      data1={data.sparkline_in_7d.price[0]}
-                      data2={data.sparkline_in_7d.price[1]}
+                      dataset={data.sparkline_in_7d.price}
                     />
                   </td>
                   {/* <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td> */}
