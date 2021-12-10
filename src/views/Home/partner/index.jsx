@@ -16,68 +16,71 @@ import nomics from "../../../assets/partners/nomics.png";
 import squid from "../../../assets/partners/squid.png";
 import tech_big from "../../../assets/partners/tech-big.png";
 
+// import Slider from "../../Home/Slider";
+
 const Partner = () => {
   return (
-    <div className="ptc__partner" id='partner'>
+    <div className="ptc__partner" id="partner">
       <div className="ptc__partner-heading">
         <h1>Our Partners</h1>
       </div>
 
       <div className="ptc__partner-images">
+        {/* <Slider items1={items} /> */}
         <div className="ptc__partner-image">
-            <img src={as} alt="as" />
+          <img src={as} alt="as" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={babyswap_logo} alt="babyswap_logo" />
+          <img src={babyswap_logo} alt="babyswap_logo" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={bscScan} alt="bscScan" />
+          <img src={bscScan} alt="bscScan" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={bsctimes} alt="bsctimes" />
+          <img src={bsctimes} alt="bsctimes" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={dapp} alt="dapp" />
+          <img src={dapp} alt="dapp" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={dappcom} alt="dappcom" />
+          <img src={dappcom} alt="dappcom" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={desert_big} alt="desert_big" />
+          <img src={desert_big} alt="desert_big" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={ftx} alt="ftx" />
+          <img src={ftx} alt="ftx" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={helmet_big} alt="helmet_big" />
+          <img src={helmet_big} alt="helmet_big" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={images} alt="images" />
+          <img src={images} alt="images" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={lcw} alt="lcw" />
+          <img src={lcw} alt="lcw" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={nomics} alt="nomics" />
+          <img src={nomics} alt="nomics" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={squid} alt="squid" />
+          <img src={squid} alt="squid" />
         </div>
 
         <div className="ptc__partner-image">
-            <img src={tech_big} alt="tech_big" />
+          <img src={tech_big} alt="tech_big" />
         </div>
       </div>
     </div>

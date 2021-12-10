@@ -9,8 +9,6 @@ const Market = () => {
   const formatter = new Intl.NumberFormat("en-US");
 
 
-  console.log("DATA: ", apiData);
-
   useEffect(() => {
     const getData = async () => {
       const { data } = await axios.get(process.env.REACT_APP_COINGEC_API);
@@ -74,12 +72,12 @@ const Market = () => {
                     )}{" "}
                     {data.symbol.toUpperCase()}
                   </td>
-                  <td>
+                  {/* <td>
                     <LineChart
                       dataset={data.sparkline_in_7d.price}
                     />
-                  </td>
-                  {/* <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td> */}
+                  </td> */}
+                  <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td>
                 </tr>
               );
             })}

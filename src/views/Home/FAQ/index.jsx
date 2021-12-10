@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./faq.css";
 
 import { Accordion } from "react-bootstrap";
 
 const FAQ = () => {
+  const [activeId, setActiveId] = useState("0");
+
+  const toggleActive = id => {
+    if (activeId === id) {
+      setActiveId(null);
+    } else {
+      setActiveId(id);
+    }
+
+    console.log(id);
+  };
+
   return (
-    <div className="ptc__faq" id='faq'>
+    <div className="ptc__faq" id="faq">
       <div className="ptc__faq-heading">
         <h1>Frequently Asked Question</h1>
       </div>
 
-      <Accordion defaultActiveKey="0" className="ptc__heading">
-        <Accordion.Item eventKey="1">
-          <Accordion.Header className="ptc__heading-content">
-            <h2>What is the usecase of PRED?</h2>
+      {/* Section 1 */}
+      <Accordion className="ptc__heading" defaultActiveKey="0" flush>
+        <Accordion.Item eventKey="1" onClick={() => toggleActive("1")}>
+          <Accordion.Header className={activeId === "1" ? "ptc__heading-element" : "ptc__heading-content"}>
+            What is the usecase of PRED?
           </Accordion.Header>
+
           <Accordion.Body>
             <p className="ptc__main-content">
               PRED is the governance token of Predictcoin and can be used to
@@ -23,9 +37,11 @@ const FAQ = () => {
             </p>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header className="ptc__heading-content">
-            <h2>How to predict the price of Crypto Assets?</h2>
+
+        {/* Section 2 */}
+        <Accordion.Item eventKey="2" onClick={() => toggleActive("2")}>
+          <Accordion.Header className={activeId === "2" ? "ptc__heading-element" : "ptc__heading-content"}>
+            How to predict the price of Crypto Assets?
           </Accordion.Header>
           <Accordion.Body>
             <p className="ptc__main-content">
@@ -34,9 +50,11 @@ const FAQ = () => {
             </p>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header className="ptc__heading-content">
-            <h2>How to launch DApp?</h2>
+
+        {/* Section 3 */}
+        <Accordion.Item eventKey="3" onClick={() => toggleActive("3")}>
+          <Accordion.Header className={activeId === "3" ? "ptc__heading-element" : "ptc__heading-content"}>
+            How to launch DApp?
           </Accordion.Header>
           <Accordion.Body>
             <p className="ptc__main-content">
@@ -46,9 +64,9 @@ const FAQ = () => {
             </p>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="3">
-          <Accordion.Header className="ptc__heading-content">
-            <h2>What is the total supply of PRED?</h2>
+        <Accordion.Item eventKey="4" onClick={() => toggleActive("4")}>
+          <Accordion.Header className={activeId === "4" ? "ptc__heading-element" : "ptc__heading-content"}>
+            What is the total supply of PRED?
           </Accordion.Header>
           <Accordion.Body>
             <p className="ptc__main-content">

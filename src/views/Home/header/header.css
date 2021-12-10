@@ -72,7 +72,7 @@ html {
 
 .ptc__header-content_button {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   margin-top: 4rem;
 }
@@ -99,6 +99,11 @@ html {
 .ptc__header-content .ptc__header-button_pred {
   border: 1px solid #2449e8;
   background: linear-gradient(133deg, #2449e8, #021a88);
+}
+
+.ptc__header-content .ptc__header-button_bid {
+  border: 1px solid #be0d00;
+  background: linear-gradient(133deg, #e84124, #be0d00);
 }
 
 .ptc__header-content .ptc__header-button_bnb {
@@ -159,6 +164,11 @@ html {
   }
 
   .ptc__header-content .ptc__header-button_pred {
+    margin: 1rem;
+    width: 100%;
+  }
+ 
+  .ptc__header-content .ptc__header-button_bid {
     margin: 1rem;
     width: 100%;
   }

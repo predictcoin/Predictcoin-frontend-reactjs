@@ -22,9 +22,15 @@ const Header = () => {
           <button className="ptc__header-button_out ptc__header-button" type="button">
             Start Predicting
           </button>
+
           <button className="ptc__header-button_pred ptc__header-button" type="button">
             Earn PRED
           </button>
+         
+          <button className="ptc__header-button_bid ptc__header-button" type="button">
+            Earn BID
+          </button>
+
           <button className="ptc__header-button_bnb ptc__header-button" type="button">
             Earn BNB
           </button>

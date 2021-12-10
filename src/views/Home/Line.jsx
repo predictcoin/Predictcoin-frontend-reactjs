@@ -2,8 +2,6 @@ import React from "react";
 import { Chart } from "react-charts";
 
 const Line = ({ dataset }) => {
-  // console.log("API RES:", dataset);
-
   const chunk = arr => {
     const size = 2;
     const chunkedArr = [];
@@ -27,8 +25,6 @@ const Line = ({ dataset }) => {
   const resultDataSet = chunk(dataset);
 
   const resultIndex = chunk(indexOfDataset);
-
-  console.log(resultIndex);
 
   const data = React.useMemo(
     () => [
