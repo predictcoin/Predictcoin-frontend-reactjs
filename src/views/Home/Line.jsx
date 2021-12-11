@@ -2,6 +2,9 @@ import React from "react";
 import { Chart } from "react-charts";
 
 const Line = ({ dataset }) => {
+  
+
+
   const chunk = arr => {
     const size = 2;
     const chunkedArr = [];
@@ -26,6 +29,8 @@ const Line = ({ dataset }) => {
 
   const resultIndex = chunk(indexOfDataset);
 
+  console.log("RES: ", resultDataSet)
+
   const data = React.useMemo(
     () => [
       {
@@ -33,11 +38,6 @@ const Line = ({ dataset }) => {
         // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
         data: resultDataSet
       },
-      {
-        label: "Series 2",
-        // data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
-        data: resultIndex
-      }
     ],
     [resultDataSet, resultIndex]
   );
