@@ -25,7 +25,11 @@ const FAQ = () => {
       {/* Section 1 */}
       <Accordion className="ptc__heading" defaultActiveKey="0" flush>
         <Accordion.Item eventKey="1" onClick={() => toggleActive("1")}>
-          <Accordion.Header className={activeId === "1" ? "ptc__heading-element" : "ptc__heading-content"}>
+          <Accordion.Header
+            className={
+              activeId === "1" ? "ptc__heading-element" : "ptc__heading-content"
+            }
+          >
             What is the usecase of PRED?
           </Accordion.Header>
 
@@ -40,7 +44,11 @@ const FAQ = () => {
 
         {/* Section 2 */}
         <Accordion.Item eventKey="2" onClick={() => toggleActive("2")}>
-          <Accordion.Header className={activeId === "2" ? "ptc__heading-element" : "ptc__heading-content"}>
+          <Accordion.Header
+            className={
+              activeId === "2" ? "ptc__heading-element" : "ptc__heading-content"
+            }
+          >
             How to predict the price of Crypto Assets?
           </Accordion.Header>
           <Accordion.Body>
@@ -53,7 +61,11 @@ const FAQ = () => {
 
         {/* Section 3 */}
         <Accordion.Item eventKey="3" onClick={() => toggleActive("3")}>
-          <Accordion.Header className={activeId === "3" ? "ptc__heading-element" : "ptc__heading-content"}>
+          <Accordion.Header
+            className={
+              activeId === "3" ? "ptc__heading-element" : "ptc__heading-content"
+            }
+          >
             How to launch DApp?
           </Accordion.Header>
           <Accordion.Body>
@@ -65,7 +77,11 @@ const FAQ = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="4" onClick={() => toggleActive("4")}>
-          <Accordion.Header className={activeId === "4" ? "ptc__heading-element" : "ptc__heading-content"}>
+          <Accordion.Header
+            className={
+              activeId === "4" ? "ptc__heading-element" : "ptc__heading-content"
+            }
+          >
             What is the total supply of PRED?
           </Accordion.Header>
           <Accordion.Body>
