@@ -2,14 +2,12 @@ import React from "react";
 import { Chart } from "react-charts";
 
 const Line = ({ dataset }) => {
-
   const resultDataSet = dataset.map((data, index) => [index, data]);
 
   const data = React.useMemo(
     () => [
       {
         label: "Series 1",
-        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
         data: resultDataSet
       },
     ],
