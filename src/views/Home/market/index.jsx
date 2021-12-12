@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./market.css";
-import LineChart from "../Line";
+import LineChart from "./Line";
 
 const Market = () => {
   const [apiData, setApiData] = useState([]);
