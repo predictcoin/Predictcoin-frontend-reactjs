@@ -75,6 +75,7 @@ const Market = () => {
                   <td>
                     <LineChart
                       dataset={data.sparkline_in_7d.price}
+                      _7dChange={data.price_change_percentage_7d_in_currency}
                     />
                   </td>
                 </tr>

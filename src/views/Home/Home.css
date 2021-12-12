@@ -15,19 +15,18 @@ a {
   background: var(--color-bg);
 }
 
-/* .section__margin {
-  margin: 5rem 2rem;
-}
 
-.section__padding {
-  padding: 5rem 4rem;
-} */
+/* Tracking in animation */
+.slide-top {
+  -webkit-animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 /* Scale Up animation */
 .scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 /* Swirl-in Animation */
@@ -117,6 +116,29 @@ a {
   }
 }
 
+/* Tracking animation keyframes *Edited* */
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+}
+
+
 @media screen and (min-width: 1024px) {
   /* .background__image {
     background-attachment: fixed;
@@ -150,49 +172,3 @@ a {
     background-size: cover;
   }
 }
-
-/* .background__image {
-  background: linear-gradient(
-      0deg,
-      rgba(23, 16, 16, 0.6),
-      rgba(23, 16, 16, 0.6)
-    ),
-    url(./assets/hero-bg.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  position: relative;
-  z-index: -10;
-} */
-
-/* .gradient__nav {
-  background: -moz-radial-gradient(
-    circle at 3% 25%,
-    rgba(36, 73, 232, 1) 0%,
-    rgba(2, 26, 136, 1) 100%
-  );
-
-  background: -webkit-radial-gradient(
-    circle at 3% 25%,
-    rgba(36, 73, 232, 1) 0%,
-    rgba(2, 26, 136, 1) 100%
-  );
-
-  background: -o-radial-gradient(
-    circle at 3% 25%,
-    rgba(36, 73, 232, 1) 0%,
-    rgba(2, 26, 136, 1) 100%
-  );
-
-  background: -ms-radial-gradient(
-    circle at 3% 25%,
-    rgba(36, 73, 232, 1) 0%,
-    rgba(2, 26, 136, 1) 100%
-  );
-
-  background: radial-gradient(
-    circle at 3% 25%,
-    rgba(36, 73, 232, 1) 0%,
-    rgba(2, 26, 136, 1) 100%
-  );
-} */

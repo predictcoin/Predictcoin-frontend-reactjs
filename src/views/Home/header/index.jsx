@@ -1,4 +1,6 @@
 import React from "react";
+
+import 'animate.css';
 import "./header.css";
 
 import vr from "../../../assets/pics/onlaptop.png";
@@ -6,7 +8,7 @@ import vr from "../../../assets/pics/onlaptop.png";
 const Header = () => {
   return (
     <div className="ptc__header section__padding" id="home">
-      <div className="ptc__header-content">
+      <div className="ptc__header-content animate__animated animate__slideInLeft">
         <div className="">
           <h1>
             Discover Predictcoin, <br /> Price Prediction Redefined
@@ -37,7 +39,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="ptc__header-content-image">
+      <div className="ptc__header-content-image animate__animated animate__slideInRight">
         <img src={vr} alt="vr" className="image__fluid" />
       </div>
     </div>

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import 'animate.css';
 import './about.css';
 
 import frame from '../../../assets/pics/Frame.png';
 import database from '../../../assets/icons/database.png';
 import headphones from '../../../assets/icons/headphones.png';
 import dollar_sign from '../../../assets/icons/dollar-sign.png';
-
 
 const About = () => {
     return (
@@ -23,9 +24,9 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='ptc__about-card content__padding'>
+            <div className='ptc__about-card'>
                 {/* First Card */}
-                <div className='ptc__about-card_content'>
+                <div className='ptc__about-card_content animate__animated animate__flip'>
                     <div className="database__icon">
                         <img src={database} alt="database_icon" />
                     </div>
@@ -35,7 +36,7 @@ const About = () => {
                 </div>
 
                 {/* Second Card */}
-                <div className='ptc__about-card_content'>
+                <div className='ptc__about-card_content animate__animated animate__flip'>
                     <div className="database__icon">
                         <img src={headphones} alt="database_icon" />
                     </div>
@@ -45,7 +46,7 @@ const About = () => {
                 </div>
 
                 {/* Third Card */}
-                <div className='ptc__about-card_content'>
+                <div className='ptc__about-card_content animate__animated animate__flip'>
                     <div className="database__icon">
                         <img src={dollar_sign} alt="database_icon" />
                     </div>
