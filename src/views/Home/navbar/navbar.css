@@ -8,11 +8,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 6rem;
+  background: #ffff;
 
-  position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-  background: #ffff;
+  overflow: hidden;
 }
 
 .ptc__navbar-links {
