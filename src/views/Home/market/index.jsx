@@ -77,7 +77,6 @@ const Market = () => {
                       dataset={data.sparkline_in_7d.price}
                     />
                   </td>
-                  {/* <td>{formatter.format(data.circulating_supply)} {data.symbol.toUpperCase()}</td> */}
                 </tr>
               );
             })}
