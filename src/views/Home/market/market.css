@@ -50,6 +50,7 @@
   font-size: 13px;
   color: var(--text-black);
   padding: 10px 20px;
+  text-align: center;
 }
 
 /* Table Style */
@@ -79,7 +80,6 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  /* background-color: var(--color-text); */
   color: gray;
 
   border: none;
@@ -90,6 +90,10 @@
     display: block;
     justify-content: center;
     align-items: center;
+
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .ptc__market-table {

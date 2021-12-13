@@ -1,6 +1,6 @@
 import React from 'react';
 
-import 'animate.css';
+import 'animate.css'
 import './about.css';
 
 import frame from '../../../assets/pics/Frame.png';
@@ -26,7 +26,7 @@ const About = () => {
 
             <div className='ptc__about-card'>
                 {/* First Card */}
-                <div className='ptc__about-card_content animate__animated animate__flip'>
+                <div className='ptc__about-card_content'>
                     <div className="database__icon">
                         <img src={database} alt="database_icon" />
                     </div>
@@ -36,7 +36,7 @@ const About = () => {
                 </div>
 
                 {/* Second Card */}
-                <div className='ptc__about-card_content animate__animated animate__flip'>
+                <div className='ptc__about-card_content'>
                     <div className="database__icon">
                         <img src={headphones} alt="database_icon" />
                     </div>
@@ -46,7 +46,7 @@ const About = () => {
                 </div>
 
                 {/* Third Card */}
-                <div className='ptc__about-card_content animate__animated animate__flip'>
+                <div className='ptc__about-card_content'>
                     <div className="database__icon">
                         <img src={dollar_sign} alt="database_icon" />
                     </div>

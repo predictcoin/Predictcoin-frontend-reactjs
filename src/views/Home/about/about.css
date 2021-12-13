@@ -1,6 +1,7 @@
 .content__padding {
   padding: 5rem 10rem;
 }
+
 .ptc__about {
   display: flex;
   justify-content: center;
@@ -44,25 +45,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
 }
 
 .ptc__about-card_content {
   background-color: #1f2134;
   border: 3px solid #2e59f3;
-  padding: 1.65rem 2.25rem;
+  padding: 1.65rem 2rem;
+  /* padding: 1.65rem 1.25rem; */
   border-radius: 32px;
-  width: 30%;
+  width: 28%;
   height: 60vh;
 
   margin: 0 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
 }
 
 .database__icon {
   text-align: center;
   line-height: 58px;
+  margin-top: 2rem;
 }
 
 .database__icon img {
@@ -86,8 +88,15 @@
   text-align: center;
 
   margin-bottom: 10rem;
-}
 
+  padding: 0 5rem;
+
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 @media screen and (max-width: 490px) {
   .content__padding {
@@ -105,6 +114,8 @@
     display: block;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
     padding: 0 2rem;
   }
 
@@ -131,6 +142,10 @@
   }
 
   .ptc__about-card_content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
     background-color: #1f2134;
     border: 3px solid #2e59f3;
     padding: 1.65rem 2.25rem;
@@ -138,9 +153,7 @@
     width: 90%;
     height: auto;
 
-    /* margin: 0 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem; */
+    margin: 1rem 0;
   }
 
   .ptc__about-card_content h4 {
@@ -176,10 +189,6 @@
   }
 
   .ptc__about-content {
-    /* display: block;
-    justify-content: center;
-    align-items: center; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,20 +213,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
   }
 
   .ptc__about-card_content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
     background-color: #1f2134;
     border: 3px solid #2e59f3;
     padding: 1.65rem 2.25rem;
     border-radius: 32px;
-    width: 90%;
-    height: auto;
+    width: 95%;
 
-    margin: 0 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 1rem 0;
   }
 
   .ptc__about-card_content h4 {

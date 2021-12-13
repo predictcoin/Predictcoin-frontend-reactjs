@@ -51,7 +51,7 @@ const Partner = () => {
           <section class="customer-logos slider">
             {pictures.map((pic, idx) =>
               <div className="slid">
-                <img key={idx} src={pic}  alt="img" />
+                <img key={idx} src={pic}  alt="logo" />
               </div>
             )}
           </section>

@@ -2,6 +2,7 @@
   margin: 0 0.5rem;
 }
 
+
 .ptc__navbar {
   display: flex;
   flex-wrap: wrap;
@@ -10,9 +11,10 @@
   padding: 0 6rem;
   background: #ffff;
 
-	position: sticky;
-	top: 0;
-  overflow: hidden;
+  position: sticky;
+  top: 0;
+  /* overflow: hidden; */
+  z-index: 1;
 }
 
 .ptc__navbar-links {
@@ -28,7 +30,7 @@
 }
 
 .ptc__navbar-links_logo img {
-  width: 35%;
+  width: 34%;
   height: auto;
 }
 
@@ -46,6 +48,10 @@
   white-space: nowrap;
   transition: 0.3s;
   padding: 10px 0 10px 30px;
+}
+
+.ptc__navbar-links_container a {
+  text-decoration: none;
 }
 
 .ptc__navbar-launch {
@@ -164,7 +170,7 @@
   }
 
   .ptc__navbar-links_logo img {
-    width: 40%;
+    width: 30%;
     height: auto;
   }
 

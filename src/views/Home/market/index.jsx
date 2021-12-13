@@ -32,14 +32,14 @@ const Market = () => {
         <table id="customers">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Price</th>
-              <th>24 %</th>
-              <th>7d %</th>
-              <th>Market Cap</th>
-              <th>Volume(24)</th>
-              <th>Circulating Supply</th>
-              <th>Last 7 Days</th>
+              <th style={{textAlign: 'center'}}>Name</th>
+              <th style={{textAlign: 'center'}}>Price</th>
+              <th style={{textAlign: 'center'}}>24 %</th>
+              <th style={{textAlign: 'center'}}>7d %</th>
+              <th style={{textAlign: 'center'}}>Market Cap</th>
+              <th style={{textAlign: 'center'}}>Volume(24)</th>
+              <th style={{textAlign: 'center'}}>Circulating Supply</th>
+              <th style={{textAlign: 'center'}}>Last 7 Days</th>
             </tr>
           </thead>
           <tbody>

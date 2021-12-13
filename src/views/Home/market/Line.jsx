@@ -38,7 +38,7 @@ const Line = ({ dataset, _7dChange }) => {
     <div
       style={{
         width: "250px",
-        height: "100px"
+        height: "50px",
       }}
     >
       <Chart data={data} axes={axes} />
