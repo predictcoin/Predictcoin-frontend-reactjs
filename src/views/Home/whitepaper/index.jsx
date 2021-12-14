@@ -1,9 +1,10 @@
 import React from "react";
+
 import "./whitepaper.css";
 
 const WhitePaper = () => {
   return (
-    <div className="ptc__whitepaper" id='whitepaper'>
+    <div className="ptc__whitepaper" id="whitepaper">
       <div className="ptc__whitepaper-section1st">
         <h1>Whitepaper</h1>
 

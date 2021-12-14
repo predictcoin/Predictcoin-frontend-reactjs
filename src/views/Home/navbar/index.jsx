@@ -43,7 +43,7 @@ const Menu = () => {
         className={activePage === "partner" ? "ptc__navbar-active" : ""}
         onClick={() => setActivePage("partner")}
       >
-        <a href="#partner">Partner</a>
+        <a href="#partner">Partners</a>
       </p>
       <p
         className={activePage === "faq" ? "ptc__navbar-active" : ""}

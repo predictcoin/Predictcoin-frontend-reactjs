@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-      <Market />
+      <Market/>
       <div className="gradient__bg">
         <About />
         <WhitePaper />

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import 'animate.css'
 import './about.css';
 
 import frame from '../../../assets/pics/Frame.png';
@@ -10,8 +9,8 @@ import dollar_sign from '../../../assets/icons/dollar-sign.png';
 
 const About = () => {
     return (
-        <>
-            <div className='ptc__about content__padding' id='about'>
+        <div id="about">
+            <div className='ptc__about content__padding'>
                 <div className='ptc__about-content'>
                     <div>
                         <h1>About Predictcoin</h1>
@@ -26,7 +25,7 @@ const About = () => {
 
             <div className='ptc__about-card'>
                 {/* First Card */}
-                <div className='ptc__about-card_content'>
+                <div className='ptc__about-card_content' id='first__card'>
                     <div className="database__icon">
                         <img src={database} alt="database_icon" />
                     </div>
@@ -55,7 +54,7 @@ const About = () => {
                     <p>Predictcoin provides a lifetime passive income for stakers & farmers as detailed on our Whitepaper. Predictors also earn free PRED once they attain a certain level of experience.</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

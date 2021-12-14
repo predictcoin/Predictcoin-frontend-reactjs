@@ -4,9 +4,10 @@ import "./header.css";
 import vr from "../../../assets/pics/onlaptop.png";
 
 const Header = () => {
+  console.log("Page render");
   return (
-    <div className="ptc__header section__padding" id="home">
-      <div className="ptc__header-content">
+    <div className="ptc__header section__padding" id="hero">
+      <div className="ptc__header-content" id="slideMeLeft">
         <div className="">
           <h1>
             Discover Predictcoin, <br /> Price Prediction Redefined
@@ -39,7 +40,7 @@ const Header = () => {
       </div>
 
       <div className="ptc__header-content-image">
-        <img src={vr} alt="vr" className="image__fluid" />
+        <img src={vr} alt="vr" className="image__fluid" id='slideMeRight'/>
       </div>
     </div>
   );

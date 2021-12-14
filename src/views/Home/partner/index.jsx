@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./partner.css";
 
 import as from "../../../assets/partners/as.png";
@@ -41,17 +42,11 @@ const Partner = () => {
       </div>
 
       <div className="ptc__partner-images">
-        {/* {pictures.map((pic, idx) =>
-          <div className="ptc__partner-image">
-            <img src={pic} key={idx} alt="img" />
-          </div>
-        )} */}
-
-        <div class="container">
-          <section class="customer-logos slider">
-            {pictures.map((pic, idx) =>
+        <div className="container">
+          <section className="customer-logos slider">
+            {pictures.map((pic, index) =>
               <div className="slid">
-                <img key={idx} src={pic}  alt="logo" />
+                <img key={index+1} src={pic}  alt="logo" />
               </div>
             )}
           </section>
