@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 490px) {
+  .ptc__roadmap {
+    padding-bottom: 5rem;
+  }
+
   .ptc__roadmap-image {
     display: none;
   }

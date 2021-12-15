@@ -53,5 +53,6 @@
 @media screen and (max-width: 490px) {
   .ptc__faq-heading h1 {
     font-size: 3rem;
+    margin-top: 5rem;
   }
 }

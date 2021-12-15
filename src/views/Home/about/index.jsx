@@ -7,9 +7,9 @@ import database from '../../../assets/icons/database.png';
 import headphones from '../../../assets/icons/headphones.png';
 import dollar_sign from '../../../assets/icons/dollar-sign.png';
 
-const About = () => {
+const About = ({ pageRefs }) => {
     return (
-        <div id="about">
+        <div ref={el => pageRefs.current = { ...pageRefs.current, about: el }}>
             <div className='ptc__about content__padding'>
                 <div className='ptc__about-content'>
                     <div>

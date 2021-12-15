@@ -5,10 +5,6 @@
   font-family: var(--font-family);
 }
 
-html {
-  scroll-behavior: auto;
-}
-
 a {
   color: unset;
   text-decoration: none;
@@ -37,6 +33,7 @@ a {
     opacity: 1;
   }
 }
+
 @keyframes swirl-in-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);

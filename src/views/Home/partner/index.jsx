@@ -4,7 +4,6 @@ import "./partner.css";
 
 import as from "../../../assets/partners/as.png";
 import babyswap_logo from "../../../assets/partners/babyswap-logo.png";
-import bscScan from "../../../assets/partners/BscScan.png";
 import bsctimes from "../../../assets/partners/bsctimes.png";
 import dapp from "../../../assets/partners/dapp.png";
 import dappcom from "../../../assets/partners/dappcom.png";
@@ -17,7 +16,7 @@ import squid from "../../../assets/partners/squid.png";
 import tech_big from "../../../assets/partners/tech-big.png";
 import dersetfinance from "../../../assets/partners/desertfinance.png";
 
-const Partner = () => {
+const Partner = ({ pageRefs }) => {
   const pictures = [
     as,
     babyswap_logo,
@@ -31,12 +30,11 @@ const Partner = () => {
     tech_big,
     images,
     dappcom,
-    bscScan,
-    squid,
+    squid
   ];
 
   return (
-    <div className="ptc__partner" id="partner">
+    <div className="ptc__partner" ref={el => pageRefs.current = { ...pageRefs.current, partner: el }}>
       <div className="ptc__partner-heading">
         <h1>Our Partners</h1>
       </div>
@@ -46,7 +44,7 @@ const Partner = () => {
           <section className="customer-logos slider">
             {pictures.map((pic, index) =>
               <div className="slid">
-                <img key={index+1} src={pic}  alt="logo" />
+                <img key={index + 1} src={pic} alt="logo" />
               </div>
             )}
           </section>

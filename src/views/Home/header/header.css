@@ -18,6 +18,12 @@ html {
 
   background-size: cover;
   position: relative;
+
+
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .ptc__header {
@@ -138,6 +144,9 @@ html {
 }
 
 @media screen and (max-width: 490px) {
+  .section__padding {
+    padding-top: 7rem;
+  }
   .ptc__header {
     display: block;
     align-items: center;
@@ -175,6 +184,13 @@ html {
 
     margin-right: 0 1rem;
     max-width: 800px;
+  }
+
+  .ptc__header-content-image img {
+    width: 100%;
+    margin-top: 2rem;
+
+    vertical-align: middle;
   }
 
   .ptc__header-content_button {

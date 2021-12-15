@@ -4,10 +4,9 @@ import axios from "axios";
 import "./market.css";
 import LineChart from "./Line";
 
-const Market = () => {
+const Market = ({ pageRefs }) => {
   const [apiData, setApiData] = useState([]);
   const formatter = new Intl.NumberFormat("en-US");
-
 
   useEffect(() => {
     const getData = async () => {
@@ -19,7 +18,7 @@ const Market = () => {
   }, []);
 
   return (
-    <div className="ptc__market" id="market">
+    <section className="ptc__market" id='market' ref={el => pageRefs.current = { ...pageRefs.current, market: el }}>
       <div className="ptc__market-text">
         <h1>Today's Cryptocurrency Prices by Market Cap</h1>
         <p>
@@ -32,14 +31,14 @@ const Market = () => {
         <table id="customers">
           <thead>
             <tr>
-              <th style={{textAlign: 'center'}}>Name</th>
-              <th style={{textAlign: 'center'}}>Price</th>
-              <th style={{textAlign: 'center'}}>24 %</th>
-              <th style={{textAlign: 'center'}}>7d %</th>
-              <th style={{textAlign: 'center'}}>Market Cap</th>
-              <th style={{textAlign: 'center'}}>Volume(24)</th>
-              <th style={{textAlign: 'center'}}>Circulating Supply</th>
-              <th style={{textAlign: 'center'}}>Last 7 Days</th>
+              <th style={{ textAlign: 'center' }}>Name</th>
+              <th style={{ textAlign: 'center' }}>Price</th>
+              <th style={{ textAlign: 'center' }}>24 %</th>
+              <th style={{ textAlign: 'center' }}>7d %</th>
+              <th style={{ textAlign: 'center' }}>Market Cap</th>
+              <th style={{ textAlign: 'center' }}>Volume(24)</th>
+              <th style={{ textAlign: 'center' }}>Circulating Supply</th>
+              <th style={{ textAlign: 'center' }}>Last 7 Days</th>
             </tr>
           </thead>
           <tbody>
@@ -84,7 +83,7 @@ const Market = () => {
           </tbody>
         </table>
       </div>
-    </div>
+    </section>
   );
 };
 

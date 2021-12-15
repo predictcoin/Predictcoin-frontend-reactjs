@@ -6,7 +6,7 @@ import vr from "../../../assets/pics/onlaptop.png";
 const Header = () => {
   console.log("Page render");
   return (
-    <div className="ptc__header section__padding" id="hero">
+    <div className="ptc__header section__padding">
       <div className="ptc__header-content" id="slideMeLeft">
         <div className="">
           <h1>

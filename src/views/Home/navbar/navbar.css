@@ -2,7 +2,6 @@
   margin: 0 0.5rem;
 }
 
-
 .ptc__navbar {
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +13,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
+
+  padding: 0 10rem;
 }
 
 .ptc__navbar-links {
@@ -29,13 +30,19 @@
 }
 
 .ptc__navbar-links_logo img {
-  width: 34%;
+  width: 60%;
   height: auto;
+
 }
 
 .ptc__navbar-links_container {
   display: flex;
   flex-direction: row;
+
+  /* Add when making changes */
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10rem;
 }
 
 .ptc__navbar-links_container p,

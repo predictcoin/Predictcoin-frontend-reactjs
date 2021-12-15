@@ -3,7 +3,7 @@ import "./faq.css";
 
 import { Accordion } from "react-bootstrap";
 
-const FAQ = () => {
+const FAQ = ({ pageRefs }) => {
   const [activeId, setActiveId] = useState("0");
 
   const toggleActive = id => {
@@ -17,7 +17,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="ptc__faq" id="faq">
+    <div className="ptc__faq" ref={el => pageRefs.current = { ...pageRefs.current, faq: el }}>
       <div className="ptc__faq-heading">
         <h1>Frequently Asked Question</h1>
       </div>

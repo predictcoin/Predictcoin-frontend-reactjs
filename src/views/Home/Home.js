@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import "./Home.css";
 
@@ -13,18 +13,20 @@ import Partner from "./partner";
 import FAQ from "./FAQ";
 
 function App() {
+  const pageRefs = useRef({});
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar pageRefs={pageRefs}/>
       <Header />
-      <Market/>
+      <Market pageRefs={pageRefs}/>
       <div className="gradient__bg">
-        <About />
-        <WhitePaper />
-        <RoadMap />
+        <About pageRefs={pageRefs}/>
+        <WhitePaper pageRefs={pageRefs}/>
+        <RoadMap pageRefs={pageRefs}/>
       </div>
-      <Partner />
-      <FAQ />
+      <Partner pageRefs={pageRefs}/>
+      <FAQ pageRefs={pageRefs}/>
       <Footer />
     </div>
   );
