@@ -34,7 +34,7 @@ const Partner = ({ pageRefs }) => {
   ];
 
   return (
-    <div className="ptc__partner" ref={el => pageRefs.current = { ...pageRefs.current, partner: el }}>
+    <div className="ptc__partner" id="partner">
       <div className="ptc__partner-heading">
         <h1>Our Partners</h1>
       </div>
@@ -44,7 +44,7 @@ const Partner = ({ pageRefs }) => {
           <section className="customer-logos slider">
             {pictures.map((pic, index) =>
               <div className="slid">
-                <img key={index + 1} src={pic} alt="logo" />
+                <img key={index} src={pic} alt="logo" />
               </div>
             )}
           </section>

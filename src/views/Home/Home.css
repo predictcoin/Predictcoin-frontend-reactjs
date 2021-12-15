@@ -5,6 +5,10 @@
   font-family: var(--font-family);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: unset;
   text-decoration: none;

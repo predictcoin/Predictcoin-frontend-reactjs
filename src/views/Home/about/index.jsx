@@ -9,7 +9,7 @@ import dollar_sign from '../../../assets/icons/dollar-sign.png';
 
 const About = ({ pageRefs }) => {
     return (
-        <div ref={el => pageRefs.current = { ...pageRefs.current, about: el }}>
+        <div id="about">
             <div className='ptc__about content__padding'>
                 <div className='ptc__about-content'>
                     <div>

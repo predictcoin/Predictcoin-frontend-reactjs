@@ -17,7 +17,7 @@ const FAQ = ({ pageRefs }) => {
   };
 
   return (
-    <div className="ptc__faq" ref={el => pageRefs.current = { ...pageRefs.current, faq: el }}>
+    <div className="ptc__faq" id="faq">
       <div className="ptc__faq-heading">
         <h1>Frequently Asked Question</h1>
       </div>

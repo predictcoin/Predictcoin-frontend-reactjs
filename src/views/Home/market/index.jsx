@@ -18,7 +18,7 @@ const Market = ({ pageRefs }) => {
   }, []);
 
   return (
-    <section className="ptc__market" id='market' ref={el => pageRefs.current = { ...pageRefs.current, market: el }}>
+    <section className="ptc__market" id="market">
       <div className="ptc__market-text">
         <h1>Today's Cryptocurrency Prices by Market Cap</h1>
         <p>

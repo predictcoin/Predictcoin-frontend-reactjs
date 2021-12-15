@@ -4,7 +4,7 @@ import "./whitepaper.css";
 
 const WhitePaper = ({ pageRefs }) => {
   return (
-    <div className="ptc__whitepaper" ref={el => pageRefs.current = { ...pageRefs.current, whitepaper: el }}>
+    <div className="ptc__whitepaper" id='whitepaper'>
       <div className="ptc__whitepaper-section1st">
         <h1>Whitepaper</h1>
 
