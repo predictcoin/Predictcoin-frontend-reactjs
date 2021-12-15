@@ -32,7 +32,7 @@
 .ptc__navbar-links_logo img {
   width: 60%;
   height: auto;
-
+  max-width: 300px;
 }
 
 .ptc__navbar-links_container {
