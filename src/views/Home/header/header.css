@@ -75,6 +75,7 @@ html {
 .ptc__header-content-image img {
   margin: auto;
   width: 100%;
+  margin-top: -10rem;
 }
 
 .ptc__header-content h1 {
