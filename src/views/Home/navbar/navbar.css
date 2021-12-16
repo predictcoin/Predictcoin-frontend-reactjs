@@ -180,7 +180,7 @@
     height: auto;
   }
 
-  .ptc__navbar-active {
+  .ptc__navbar-active:hover {
     background: var(--gradient-hover);
     border: 1px solid var(--gradient-hover);
     border-radius: 64px;
@@ -237,7 +237,7 @@
     height: auto;
   }
 
-  .ptc__navbar-active {
+  .ptc__navbar-active:hover {
     background: var(--gradient-hover);
     border: 1px solid var(--gradient-hover);
     border-radius: 64px;

@@ -12,6 +12,7 @@ import WhitePaper from "./whitepaper";
 import Partner from "./partner";
 import FAQ from "./FAQ";
 
+
 function App() {
   const pageRefs = useRef({});
 
