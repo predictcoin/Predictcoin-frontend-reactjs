@@ -299,7 +299,7 @@
   }
 }
 
-/* @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .ptc__navbar-links_logo img {
     width: 70%;
     height: auto;
@@ -307,7 +307,7 @@
     margin-left: 1rem;
     padding: 0;
   }
-} */
+}
 
 /* @media screen and (max-width: 768px) {
   .ptc__navbar {

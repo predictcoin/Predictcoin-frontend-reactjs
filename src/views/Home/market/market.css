@@ -179,7 +179,7 @@
   }
 }
 
-/* @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .ptc__market {
     display: block;
     justify-content: center;
@@ -212,7 +212,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .ptc__market {
     display: block;
     justify-content: center;
