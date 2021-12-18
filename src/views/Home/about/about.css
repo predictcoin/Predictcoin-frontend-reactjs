@@ -328,7 +328,7 @@
   }
 }
 
-/* @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .ptc__about-content h1 {
     text-align: left;
     font-size: 40px;
@@ -385,7 +385,7 @@
     padding: 0;
     margin-bottom: 4rem;
   }
-} */
+}
 
 /* @media screen and (max-width: 425px) {
   .ptc__about-content h1 {
