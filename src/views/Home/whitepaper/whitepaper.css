@@ -95,7 +95,7 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .ptc__whitepaper {
     flex: 1;
     display: flex;
@@ -105,4 +105,4 @@
 
     margin-top: 3rem;
   }
-} */
+}

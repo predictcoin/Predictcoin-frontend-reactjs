@@ -309,7 +309,7 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .ptc__navbar {
     display: flex;
     justify-content: center;
@@ -331,4 +331,4 @@
 
     margin-right: -25rem;
   }
-} */
+}

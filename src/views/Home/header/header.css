@@ -322,7 +322,7 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .section__padding {
     padding-top: 5rem;
   }
@@ -381,6 +381,6 @@
     margin-top: 2rem;
 
     vertical-align: middle;
-    margin: 0 0rem;
+    margin: 0 15rem;
   }
-} */
+}

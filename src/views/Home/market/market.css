@@ -212,7 +212,7 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .ptc__market {
     display: block;
     justify-content: center;
@@ -256,4 +256,4 @@
     padding: 20px 70px;
     text-align: left;
   }
-} */
+}

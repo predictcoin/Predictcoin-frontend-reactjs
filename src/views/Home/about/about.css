@@ -445,7 +445,7 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .ptc__about {
     display: flex;
     justify-content: center;
@@ -541,4 +541,4 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
-} */
+}
