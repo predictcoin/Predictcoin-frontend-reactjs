@@ -52,3 +52,21 @@
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .ptc__roadmap-heading h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ptc__roadmap-heading h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 452px) {
+  .ptc__roadmap-heading h1 {
+    font-size: 3rem;
+  }
+}

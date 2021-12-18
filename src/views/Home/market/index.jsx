@@ -71,7 +71,7 @@ const Market = ({ pageRefs }) => {
                     )}{" "}
                     {data.symbol.toUpperCase()}
                   </td>
-                  <td>
+                  <td style={{marginLeft: "10rem"}}>
                     <LineChart
                       dataset={data.sparkline_in_7d.price}
                       _7dChange={data.price_change_percentage_7d_in_currency}

@@ -166,3 +166,17 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .ptc__partner-heading h1 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ptc__partner-heading h1 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
