@@ -59,14 +59,14 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .ptc__roadmap-heading h1 {
     font-size: 3rem;
   }
-}
+} */
 
-@media screen and (max-width: 452px) {
+/* @media screen and (max-width: 452px) {
   .ptc__roadmap-heading h1 {
     font-size: 3rem;
   }
-}
+} */
