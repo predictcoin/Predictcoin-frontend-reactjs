@@ -2,6 +2,10 @@
   padding-top: 15rem;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .ptc__header {
   width: 100%;
   height: 70vh;
@@ -105,7 +109,6 @@
   margin-left: 13px;
   display: inline-block;
 
-  /* text-decoration: none; */
   text-align: center;
   color: #fff;
   font-weight: 700;
@@ -135,85 +138,9 @@
   background: linear-gradient(133deg, #fac000, #f39601);
 }
 
-@media screen and (max-width: 490px) {
-  .section__padding {
-    padding-top: 7rem;
-  }
-
-  .ptc__header {
-    display: block;
-    align-items: center;
-    background-size: cover;
-  }
-
-  .ptc__header-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    padding-top: -20px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .ptc__header-content h1 {
-    display: block;
-    font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 500px;
-    color: #fff;
-    text-align: center;
-    line-height: 30px;
-  }
-
-  .ptc__header-content h2 {
-    display: inline-block;
-    font-family: var(--font-family);
-    font-size: 19px;
-    color: #fff;
-    text-align: center;
-
-    margin-right: 0 1rem;
-    max-width: 800px;
-  }
-
-  .ptc__header-content-image img {
-    width: 100%;
-    margin-top: 2rem;
-
-    vertical-align: middle;
-  }
-
-  .ptc__header-content_button {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-    padding: 2rem;
-  }
-
-  .ptc__header-content .ptc__header-button_out {
-    margin: 1rem;
-    width: 100%;
-  }
-
-  .ptc__header-content .ptc__header-button_pred {
-    margin: 1rem;
-    width: 100%;
-  }
-
-  .ptc__header-content .ptc__header-button_bid {
-    margin: 1rem;
-    width: 100%;
-  }
-
-  .ptc__header-content .ptc__header-button_bnb {
-    margin: 1rem;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 320px) {
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
   }
 
   .ptc__header {
@@ -221,7 +148,7 @@
     align-items: center;
     background-size: cover;
 
-    height: 80vh;
+    height: 90vh;
   }
 
   .ptc__header-content {
@@ -258,7 +185,8 @@
   .ptc__header-content_button {
     display: block;
     width: 100%;
-    padding: 0 2rem 1rem 2rem;
+    margin-top: 1rem;
+    padding: 2rem;
   }
 
   .ptc__header-content-image img {
@@ -266,21 +194,103 @@
     height: auto;
 
     vertical-align: middle;
-    margin: 0 0 3rem 0;
+    margin: 0 0 0 0;
   }
 
   .ptc__header-content_button a {
     padding: 10px 20px;
   }
+
+  .ptc__header-content .ptc__header-button_out {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_pred {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_bid {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_bnb {
+    margin: 1rem;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
+  .section__padding {
+    padding-top: 4rem;
+  }
+
   .ptc__header {
     display: block;
     align-items: center;
     background-size: cover;
 
     height: 90vh;
+  }
+
+  .ptc__header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    padding-top: -20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .ptc__header-content h1 {
+    display: block;
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .ptc__header-content h2 {
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+
+    line-height: 20px;
+  }
+
+  .ptc__header-content_button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+  }
+
+  .ptc__header-content .ptc__header-button_out {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_pred {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_bid {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_bnb {
+    margin: 1rem;
+    width: 100%;
   }
 
   .ptc__header-content-image {
@@ -294,7 +304,7 @@
     height: auto;
 
     vertical-align: middle;
-    margin: 0 0 3rem 4rem;
+    margin: 0 0 0 4rem;
   }
 }
 
@@ -307,6 +317,50 @@
     height: 90vh;
   }
 
+  .ptc__header-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ptc__header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .ptc__header-content h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .ptc__header-content_button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+  }
+
+  .ptc__header-content .ptc__header-button_out {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_pred {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_bid {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .ptc__header-content .ptc__header-button_bnb {
+    margin: 1rem;
+    width: 100%;
+  }
+
   .ptc__header-content-image {
     display: block;
     justify-content: center;
@@ -318,13 +372,13 @@
     height: auto;
 
     vertical-align: middle;
-    margin: 0 0 4rem 4rem;
+    margin: 0 0 0 4rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .section__padding {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   .ptc__header {
@@ -332,55 +386,45 @@
     align-items: center;
     background-size: cover;
 
-    height: 80vh;
+    height: 50vh;
   }
 
   .ptc__header-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .ptc__header-content h1 {
-    display: block;
-    font-family: var(--font-family);
     font-size: 4rem;
-    font-weight: bold;
-    color: #fff;
+    line-height: 50px;
     text-align: center;
-    line-height: 40px;
   }
 
   .ptc__header-content h2 {
-    display: inline-block;
-    font-family: var(--font-family);
-    color: #fff;
+    font-size: 2rem;
     text-align: center;
-    width: 100%;
-
-    line-height: 30px;
   }
 
   .ptc__header-content_button {
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
     margin-top: 1rem;
-    padding: 2rem;
+    padding: 0;
   }
 
   .ptc__header-content-image {
     display: block;
-    grid-template-rows: 60px;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
   }
 
   .ptc__header-content-image img {
-    margin: auto;
-    width: 60%;
-    margin-top: 2rem;
+    width: 50%;
+    height: auto;
 
     vertical-align: middle;
-    margin: 0 15rem;
+    margin: 0 5rem 0 20rem;
   }
 }

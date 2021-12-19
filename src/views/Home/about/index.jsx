@@ -45,7 +45,7 @@ const About = ({ pageRefs }) => {
                 </div>
 
                 {/* Third Card */}
-                <div className='ptc__about-card_content'>
+                <div className='ptc__about-card_content' id="third_card">
                     <div className="database__icon">
                         <img src={dollar_sign} alt="database_icon" />
                     </div>

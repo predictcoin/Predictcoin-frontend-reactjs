@@ -66,6 +66,9 @@
 }
 
 @media screen and (max-width: 320px) {
+  .ptc__whitepaper {
+    margin-top: 1rem;
+  }
   .ptc__whitepaper-section1st h1 {
     font-size: 3rem;
   }
