@@ -64,7 +64,6 @@
 #customers th {
   border: 1px solid #ddd;
   padding: 8px;
-
   border: none;
 }
 
@@ -85,6 +84,9 @@
   border: none;
 }
 
+#customers td>div{
+  margin: auto !important;
+}
 
 @media screen and (max-width: 320px) {
   .ptc__market {

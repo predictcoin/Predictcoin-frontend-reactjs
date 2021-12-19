@@ -6,9 +6,7 @@ import BscScan from "../../../assets/partners/BscScan.png";
 const Footer = () => {
   return (
     <div className="ptc__footer">
-      <div className="ptc__footer-image">
-        <img src={BscScan} alt="Logo" />
-      </div>
+      <img src={BscScan} alt="Logo" className="ptc__footer-image" />
 
       <div className="ptc__footer-links">
         <a href={process.env.REACT_APP_TWITTER}>
@@ -41,7 +39,7 @@ const Footer = () => {
       </div>
 
       <div className="ptc__footer-copy">
-        <p> Copyright ©Predictcoin 2021.</p>
+        Copyright ©Predictcoin 2021
       </div>
     </div>
   );
