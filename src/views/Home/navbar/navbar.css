@@ -105,18 +105,18 @@
 }
 
 .ptc__navbar-menu_container {
-  background: var(--gradient-bg);
+  background: #ffff;
   position: fixed;
-  width: 30vw;
-  height: 100vh;
-  top: 0;
+  width: 100vw;
+  height: 50vh;
+  top: 10rem;
   left: 0;
   right: 0;
   margin: 0 0;
 }
 
 .ptc__navbar-menu_container p {
-  color: #ffff;
+  color: black;
   font-family: var(--font-family);
   font-size: 15px;
   font-weight: 600;
@@ -143,7 +143,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 0 2rem;
+    padding: 0 0;
   }
 
   .ptc__navbar-menu {
@@ -151,7 +151,7 @@
   }
 
   .ptc__navbar-launch button {
-    padding: 5px 10px 5px 10px;
+    padding: 1px 5px 1px 5px;
     width: 100;
   }
 
@@ -240,7 +240,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .ptc__navbar-links_container {
     display: none;
   }
@@ -270,4 +270,4 @@
 
     margin-right: -25rem;
   }
-}
+} */
