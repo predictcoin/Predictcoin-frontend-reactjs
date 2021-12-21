@@ -376,7 +376,7 @@ html {
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .section__padding {
     padding-top: 2rem;
   }
@@ -427,4 +427,4 @@ html {
     vertical-align: middle;
     margin: 0 5rem 0 20rem;
   }
-} */
+}

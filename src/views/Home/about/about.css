@@ -249,6 +249,9 @@
   }
 } */
 
+
+
+
 @media screen and (max-width: 320px) {
   .content__padding {
     padding: 0;
@@ -464,7 +467,7 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .content__padding {
     padding: 2rem 1rem;
   }
@@ -567,4 +570,4 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
-} */
+}
