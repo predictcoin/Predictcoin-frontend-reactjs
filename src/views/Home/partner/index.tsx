@@ -16,7 +16,7 @@ import squid from "../../../assets/partners/squid.png";
 import tech_big from "../../../assets/partners/tech-big.png";
 import dersetfinance from "../../../assets/partners/desertfinance.png";
 
-const Partner = ({ pageRefs }) => {
+const Partner = () => {
   const pictures = [
     as,
     babyswap_logo,

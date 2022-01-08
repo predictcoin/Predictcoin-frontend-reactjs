@@ -2,7 +2,7 @@ import React from "react";
 
 import "./whitepaper.css";
 
-const WhitePaper = ({ pageRefs }) => {
+const WhitePaper = () => {
   return (
     <div className="ptc__whitepaper" id='whitepaper'>
       <div className="ptc__whitepaper-section1st">
@@ -12,7 +12,7 @@ const WhitePaper = ({ pageRefs }) => {
         <a className='bid' href={process.env.REACT_APP_BID_LINK}>BID Whitepaper</a>
       </div>
 
-      <div className="ptc__whitepaper-section2st" id='audit' ref={el => pageRefs.current = { ...pageRefs.current, audit: el }}>
+      <div className="ptc__whitepaper-section2st" id='audit' >
         <h1>Audit</h1>
 
         <a className='report' href={process.env.REACT_APP_REPORT_LINK}>Read Audit Report</a>

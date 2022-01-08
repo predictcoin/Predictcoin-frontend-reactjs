@@ -1,7 +1,7 @@
 import React from "react";
 import { Chart } from "react-charts";
 
-const Line = ({ dataset, _7dChange }) => {
+const Line = ({ dataset, _7dChange }: { dataset: string[], _7dChange: number}) => {
   const resultDataSet = dataset.map((data, index) => [index, data]);
 
   let prices = [];

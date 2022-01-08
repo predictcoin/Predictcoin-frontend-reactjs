@@ -5,7 +5,7 @@ import "./navbar.css";
 
 import logo from "../../../assets/pics/logoblue.png";
 
-const Menu = ({ setToggleMenu }) => {
+const Menu = ({ setToggleMenu }: {setToggleMenu: (bool: boolean) => void}) => {
     const [activePage, setActivePage] = useState("market");
 
     return (
@@ -80,7 +80,7 @@ const Menu = ({ setToggleMenu }) => {
     );
 };
 
-const Navbar = ({ pageRefs }) => {
+const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const handleCloseMene = () => {
@@ -91,10 +91,10 @@ const Navbar = ({ pageRefs }) => {
         setToggleMenu(true);
     };
 
-    function scrollIntoView(type) {
-        console.log("Type: ", type)
-        pageRefs.current[type].scrollIntoView({ behavior: "smooth" });
-    };
+    // function scrollIntoView(type) {
+    //     console.log("Type: ", type)
+    //     pageRefs.current[type].scrollIntoView({ behavior: "smooth" });
+    // };
 
     return (
         <div className="ptc__navbar">

@@ -7,7 +7,7 @@ import database from '../../../assets/icons/database.png';
 import headphones from '../../../assets/icons/headphones.png';
 import dollar_sign from '../../../assets/icons/dollar-sign.png';
 
-const About = ({ pageRefs }) => {
+const About = () => {
     return (
         <div id="about">
             <div className='ptc__about content__padding'>

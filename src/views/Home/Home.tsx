@@ -1,5 +1,3 @@
-import React, { useRef } from "react";
-
 import "./Home.css";
 
 import Header from "./header";
@@ -14,20 +12,19 @@ import FAQ from "./FAQ";
 
 
 function Home() {
-  const pageRefs = useRef({});
 
   return (
     <div className="App">
-      <Navbar pageRefs={pageRefs}/>
+      <Navbar/>
       <Header />
-      <Market pageRefs={pageRefs}/>
+      <Market />
       <div className="gradient__bg">
-        <About pageRefs={pageRefs}/>
-        <WhitePaper pageRefs={pageRefs}/>
-        <RoadMap pageRefs={pageRefs}/>
+        <About />
+        <WhitePaper />
+        <RoadMap />
       </div>
-      <Partner pageRefs={pageRefs}/>
-      <FAQ pageRefs={pageRefs}/>
+      <Partner />
+      <FAQ />
       <Footer />
     </div>
   );

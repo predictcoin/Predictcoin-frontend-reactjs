@@ -3,12 +3,12 @@ import "./faq.css";
 
 import { Accordion } from "react-bootstrap";
 
-const FAQ = ({ pageRefs }) => {
+const FAQ = () => {
   const [activeId, setActiveId] = useState("0");
 
-  const toggleActive = id => {
+  const toggleActive = (id: string) => {
     if (activeId === id) {
-      setActiveId(null);
+      setActiveId("");
     } else {
       setActiveId(id);
     }

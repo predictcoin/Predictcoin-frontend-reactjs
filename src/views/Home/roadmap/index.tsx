@@ -5,7 +5,7 @@ import './roadmap.css';
 import roadmap from '../../../assets/pics/desktop.jpg';
 import mobile from '../../../assets/pics/mobile.jpg';
 
-const RoadMap = ({ pageRefs }) => {
+const RoadMap = () => {
     return (
         <div className="ptc__roadmap" id="roadmap">
             <div className='ptc__roadmap-heading'>

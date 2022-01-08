@@ -4,13 +4,13 @@ import axios from "axios";
 import "./market.css";
 import LineChart from "./Line";
 
-const Market = ({ pageRefs }) => {
+const Market = () => {
   const [apiData, setApiData] = useState([]);
   const formatter = new Intl.NumberFormat("en-US");
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(process.env.REACT_APP_COINGEC_API);
+      const { data } = await axios.get(process.env.REACT_APP_COINGEC_API!);
       setApiData(data);
     };
 
@@ -40,9 +40,9 @@ const Market = ({ pageRefs }) => {
               <th style={{ textAlign: 'center' }}>Circulating Supply</th>
               <th style={{ textAlign: 'center' }}>Last 7 Days</th>
             </tr>
-          </thead>
+          </thead> 
           <tbody>
-            {apiData.map(data => {
+            {apiData.map((data: any) => {
               return (
                 <tr key={data.id}>
                   <td>
