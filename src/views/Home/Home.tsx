@@ -13,7 +13,7 @@ import Partner from "./partner";
 import FAQ from "./FAQ";
 
 
-function App() {
+function Home() {
   const pageRefs = useRef({});
 
   return (
@@ -33,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

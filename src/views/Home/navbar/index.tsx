@@ -106,7 +106,7 @@ const Navbar = ({ pageRefs }) => {
                 </div>
 
                 <div className="ptc__navbar-links_container">
-                    <Menu setToggleMenu={setToggleMenu}  scrollIntoView={scrollIntoView}/>
+                    <Menu setToggleMenu={setToggleMenu}/>
                 </div>
 
                 <div className="ptc__navbar-launch">
@@ -140,7 +140,7 @@ const Navbar = ({ pageRefs }) => {
                 {toggleMenu && (
                     <div className="ptc__navbar-menu_container slide-in-left">
                         <div className="ptc__navbar-menu_container-links">
-                            <Menu setToggleMenu={setToggleMenu} scrollIntoView={scrollIntoView}/>
+                            <Menu setToggleMenu={setToggleMenu} />
 
                             <div className="ptc__navbar-menu-container-launch">
                                 <button type="button">Launch DApp</button>

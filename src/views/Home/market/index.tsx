@@ -67,7 +67,7 @@ const Market = ({ pageRefs }) => {
                   </td>
                   <td>
                     {formatter.format(
-                      parseInt(data.total_volume / data.current_price)
+                      Math.trunc(data.total_volume / data.current_price)
                     )}{" "}
                     {data.symbol.toUpperCase()}
                   </td>
