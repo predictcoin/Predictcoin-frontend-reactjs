@@ -1,23 +1,24 @@
-html {
-  font-size: 62.5%;
-}
-
 .section__padding {
   padding-top: 15rem;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .ptc__header {
+  width: 100%;
+  height: 70vh;
   background: linear-gradient(
       0deg,
       rgba(23, 16, 16, 0.6),
       rgba(23, 16, 16, 0.6)
     ),
-    url(../../../assets/pics/hero-bg.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
+    url(../../../assets/pics/hero-bg.jpg) top center;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: relative;
-  z-index: -10;
 }
 
 .ptc__header {
@@ -26,30 +27,50 @@ html {
   grid-template-columns: 1.5fr 1fr;
 }
 
-/* .ptc__header-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+.ptc__header-content {
+  position: relative;
+  opacity: 1;
+}
 
-  margin-top: 2rem;
-} */
+#slideMeLeft {
+  animation: slideMe 0.7s ease-in;
+}
+
+@keyframes slideMe {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: skewY(0deg);
+  }
+}
 
 /* Right */
 .ptc__header-content-image {
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  flex-direction: column; */
-
   display: block;
   grid-template-rows: 60px;
   grid-template-columns: auto 1fr 1fr;
 }
 
+#slideMeRight {
+  animation: slideRight 0.7s ease-in;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
 .ptc__header-content-image img {
   margin: auto;
   width: 100%;
+  margin-top: -10rem;
 }
 
 .ptc__header-content h1 {
@@ -69,26 +90,32 @@ html {
   margin-right: 1rem;
   margin-top: 2rem;
 }
+.ptc__header-content h1,
+.ptc__header-content h2 {
+  position: relative;
+}
 
 .ptc__header-content_button {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   margin-top: 4rem;
 }
 
-.ptc__header-content button {
+.ptc__header-content_button a {
   padding: 10px 30px;
   border-radius: 30px;
   font-size: 16px;
   margin-left: 13px;
   display: inline-block;
-  text-decoration: none;
+
   text-align: center;
   color: #fff;
   font-weight: 700;
   outline: none;
+
   cursor: pointer;
+  text-decoration: none;
 }
 
 .ptc__header-content .ptc__header-button_out {
@@ -101,22 +128,35 @@ html {
   background: linear-gradient(133deg, #2449e8, #021a88);
 }
 
+.ptc__header-content .ptc__header-button_bid {
+  border: 1px solid #be0d00;
+  background: linear-gradient(133deg, #e84124, #be0d00);
+}
+
 .ptc__header-content .ptc__header-button_bnb {
   border: 1px solid #fac000;
   background: linear-gradient(133deg, #fac000, #f39601);
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 320px) {
+  .section__padding {
+    padding: 2rem 1rem;
+  }
+
   .ptc__header {
     display: block;
     align-items: center;
     background-size: cover;
+
+    height: 90vh;
   }
 
   .ptc__header-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 400px;
     padding-top: -20px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -125,25 +165,21 @@ html {
   .ptc__header-content h1 {
     display: block;
     font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 500px;
+    font-size: 25px;
+    font-weight: bold;
     color: #fff;
     text-align: center;
-    line-height: 30px;
-
-    /* max-width: 900px; */
-    /* margin-top: 27rem; */
+    line-height: 28px;
   }
 
   .ptc__header-content h2 {
     display: inline-block;
     font-family: var(--font-family);
-    font-size: 19px;
+    font-size: 14px;
     color: #fff;
     text-align: center;
 
-    margin-right: 0 1rem;
-    max-width: 800px;
+    line-height: 20px;
   }
 
   .ptc__header-content_button {
@@ -151,6 +187,18 @@ html {
     width: 100%;
     margin-top: 1rem;
     padding: 2rem;
+  }
+
+  .ptc__header-content-image img {
+    width: 100%;
+    height: auto;
+
+    vertical-align: middle;
+    margin: 0 0 0 0;
+  }
+
+  .ptc__header-content_button a {
+    padding: 10px 20px;
   }
 
   .ptc__header-content .ptc__header-button_out {
@@ -163,47 +211,59 @@ html {
     width: 100%;
   }
 
+  .ptc__header-content .ptc__header-button_bid {
+    margin: 1rem;
+    width: 100%;
+  }
+
   .ptc__header-content .ptc__header-button_bnb {
     margin: 1rem;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
+  .section__padding {
+    padding-top: 4rem;
+  }
+
   .ptc__header {
     display: block;
     align-items: center;
     background-size: cover;
+
+    height: 90vh;
   }
 
   .ptc__header-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* max-width: 500px; */
-    /* padding: 2rem; */
+    flex-direction: column;
+    max-width: 400px;
+    padding-top: -20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .ptc__header-content h1 {
     display: block;
     font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 500px;
+    font-size: 25px;
+    font-weight: bold;
     color: #fff;
     text-align: center;
-    line-height: 30px;
+    line-height: 28px;
   }
 
   .ptc__header-content h2 {
     display: inline-block;
     font-family: var(--font-family);
-    font-size: 19px;
+    font-size: 14px;
     color: #fff;
     text-align: center;
-    /* 
-    margin-right: 0 1rem;
-    max-width: 800px; */
+
+    line-height: 20px;
   }
 
   .ptc__header-content_button {
@@ -223,49 +283,62 @@ html {
     width: 100%;
   }
 
+  .ptc__header-content .ptc__header-button_bid {
+    margin: 1rem;
+    width: 100%;
+  }
+
   .ptc__header-content .ptc__header-button_bnb {
     margin: 1rem;
     width: 100%;
+  }
+
+  .ptc__header-content-image {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ptc__header-content-image img {
+    width: 80%;
+    height: auto;
+
+    vertical-align: middle;
+    margin: 0 0 0 4rem;
   }
 }
-/* @media screen and (max-width: 550px) {
+
+@media screen and (max-width: 425px) {
   .ptc__header {
     display: block;
     align-items: center;
-    background-size: auto;
+    background-size: cover;
+
+    height: 90vh;
   }
 
   .ptc__header-content {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
   }
 
   .ptc__header-content h1 {
-    display: block;
-    font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 500px;
-    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 40px;
     text-align: center;
-    line-height: 30px;
   }
 
   .ptc__header-content h2 {
-    display: inline-block;
-    font-family: var(--font-family);
-    font-size: 19px;
-    color: #fff;
     text-align: center;
-
-    margin-right: 0 1rem;
-    max-width: 800px;
+    font-size: 18px;
   }
 
   .ptc__header-content_button {
     display: block;
     width: 100%;
     margin-top: 1rem;
+    padding: 2rem;
   }
 
   .ptc__header-content .ptc__header-button_out {
@@ -278,126 +351,80 @@ html {
     width: 100%;
   }
 
+  .ptc__header-content .ptc__header-button_bid {
+    margin: 1rem;
+    width: 100%;
+  }
+
   .ptc__header-content .ptc__header-button_bnb {
     margin: 1rem;
     width: 100%;
   }
-} */
 
-/* @media screen and(max-width: 730px) {
+  .ptc__header-content-image {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ptc__header-content-image img {
+    width: 80%;
+    height: auto;
+
+    vertical-align: middle;
+    margin: 0 0 0 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding-top: 2rem;
+  }
+
   .ptc__header {
     display: block;
     align-items: center;
-    background-size: auto;
+    background-size: cover;
+
+    height: 50vh;
   }
 
   .ptc__header-content {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
   }
 
   .ptc__header-content h1 {
-    display: block;
-    font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 500px;
-    color: #fff;
+    font-size: 4rem;
+    line-height: 50px;
     text-align: center;
-    line-height: 30px;
   }
 
   .ptc__header-content h2 {
-    display: inline-block;
-    font-family: var(--font-family);
-    font-size: 19px;
-    color: #fff;
+    font-size: 2rem;
     text-align: center;
-
-    margin-right: 0 1rem;
-    max-width: 800px;
   }
 
   .ptc__header-content_button {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .ptc__header-content .ptc__header-button_out {
-    margin: 1rem;
-    width: 100%;
-  }
-
-  .ptc__header-content .ptc__header-button_pred {
-    margin: 1rem;
-    width: 100%;
-  }
-
-  .ptc__header-content .ptc__header-button_bnb {
-    margin: 1rem;
-    width: 100%;
-  }
-} */
-
-/* @media screen and(max-width: 1050px) {
-  .ptc__header {
-    display: block;
-    align-items: center;
-    background-size: auto;
-  }
-
-  .ptc__header-content {
     display: flex;
-    flex-direction: column;
-    max-width: 500px;
-  }
+    justify-content: flex-start;
+    align-items: center;
 
-  .ptc__header-content h1 {
-    display: block;
-    font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 500px;
-    color: #fff;
-    text-align: center;
-    line-height: 30px;
-  }
-
-  .ptc__header-content h2 {
-    display: inline-block;
-    font-family: var(--font-family);
-    font-size: 19px;
-    color: #fff;
-    text-align: center;
-
-    margin-right: 0 1rem;
-    max-width: 800px;
-  }
-
-  .ptc__header-content_button {
-    display: block;
-    width: 100%;
     margin-top: 1rem;
+    padding: 0;
   }
 
-  .ptc__header-content .ptc__header-button_out {
-    margin: 1rem;
-    width: 100%;
+  .ptc__header-content-image {
+    display: block;
+    justify-content: center;
+    align-items: center;
   }
 
-  .ptc__header-content .ptc__header-button_pred {
-    margin: 1rem;
-    width: 100%;
+  .ptc__header-content-image img {
+    width: 50%;
+    height: auto;
+
+    vertical-align: middle;
+    margin: 0 5rem 0 20rem;
   }
-
-  .ptc__header-content .ptc__header-button_bnb {
-    margin: 1rem;
-    width: 100%;
-  }
-} */
-
-/* @media screen and(max-width: 1050px) {} */
-
-/* @media screen and(max-width: 700px) {} */
-
-/* @media screen and(max-width: 550px) {} */
+}
