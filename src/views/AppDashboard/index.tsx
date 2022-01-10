@@ -9,7 +9,7 @@ const AppDashboard: FC = () => {
 	return (
 		<Routes>
 			<Route path='/farming' element={<Farming />} />
-			<Route path='/prediction' element={<Prediction />} />
+			<Route path='/price-prediction' element={<Prediction />} />
 			<Route path='/staking' element={<Staking />} />
 		</Routes>
 	);
