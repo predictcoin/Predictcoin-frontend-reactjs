@@ -1,13 +1,13 @@
 #sidebar {
 	position: fixed;
-	z-index: 10;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100%;
 	max-width: 286px;
 	height: 100vh;
 	overflow-y: auto;
-    padding-bottom: 30px;
+	padding-bottom: 30px;
 
 	nav {
 		width: 100%;
@@ -89,7 +89,7 @@
 			position: relative;
 			width: 100%;
 			max-width: 192px;
-			margin: 32px auto 0;
+			margin: 32px auto 0 30px;
 			height: 134px;
 			background: rgba(255, 255, 255, 0.14);
 			border-radius: 8px;
@@ -137,6 +137,7 @@
 					font-size: 11px;
 					line-height: 16px;
 					color: #ffffff;
+					margin-bottom: 3px;
 				}
 
 				.copy__CA {
@@ -153,5 +154,9 @@
 				}
 			}
 		}
+	}
+
+	& + section {
+		margin-left: 286px;
 	}
 }
