@@ -35,7 +35,7 @@ const farmingCardData: FarmingCardModel[] = [
 		USDTStaked: 0.012,
 	},
 	{
-		id: '2',
+		id: '4',
 		tokenName: 'BUSD',
 		tokenMultiple: '50x',
 		aprEarned: '133%',
@@ -46,7 +46,7 @@ const farmingCardData: FarmingCardModel[] = [
 		USDTStaked: 0.012,
 	},
 	{
-		id: '2',
+		id: '5',
 		tokenName: 'BUSD',
 		tokenMultiple: '50x',
 		aprEarned: '133%',
@@ -57,7 +57,7 @@ const farmingCardData: FarmingCardModel[] = [
 		USDTStaked: 0.012,
 	},
 	{
-		id: '2',
+		id: '6',
 		tokenName: 'BUSD',
 		tokenMultiple: '50x',
 		aprEarned: '133%',
