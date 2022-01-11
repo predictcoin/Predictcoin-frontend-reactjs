@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import ExportIcon from '../../../../assets/appSvgs/ExportIcon';
 
 interface FarmingCardProps {
-	id;
+	id: string;
 	tokenName: string;
 	tokenMultiple: string;
 	aprEarned: string;

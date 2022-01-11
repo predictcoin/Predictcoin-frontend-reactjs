@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 import PredictLogoSidebar from '../../../../assets/pics/PredictLogoSidebar.png';
 import WalletIcon from '../../../../assets/appSvgs/WalletIcon.png';
+import farmingCardData from '../../data/farmingCardData';
+import FarmingCard from '../../Components/FarmingCard';
 
 const FarmingMainContent: FC = () => {
 	return (
@@ -24,9 +26,23 @@ const FarmingMainContent: FC = () => {
 				</div>
 			</header>
 
-            <main>
-                
-            </main>
+			<main>
+				<div className='farming__card__container'>
+					{farmingCardData.map((card) => (
+						<FarmingCard
+							id={card.id}
+							tokenName={card.tokenName}
+							tokenMultiple={card.tokenMultiple}
+							aprEarned={card.aprEarned}
+							predEarned={card.predEarned}
+							totalStaked={card.totalStaked}
+							contractUrl={card.contractUrl}
+							ctaType={card.ctaType}
+							USDTStaked={card.USDTStaked}
+						/>
+					))}
+				</div>
+			</main>
 		</section>
 	);
 };
