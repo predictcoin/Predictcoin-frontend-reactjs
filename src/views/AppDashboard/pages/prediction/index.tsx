@@ -1,12 +1,17 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 
 import Sidebar from '../../Components/Sidebar';
 import './prediction.styles.scss';
 
 const Prediction: FC = () => {
+	const [isSidebarExpanded, setIsSidebarExpanded] = useState<boolean>(false);
+
 	return (
 		<section id='prediction'>
-			<Sidebar />
+			<Sidebar
+				isSidebarExpanded={isSidebarExpanded}
+				setIsSidebarExpanded={setIsSidebarExpanded}
+			/>
 		</section>
 	);
 };
