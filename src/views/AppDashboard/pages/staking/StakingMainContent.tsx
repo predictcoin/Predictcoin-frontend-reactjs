@@ -1,10 +1,11 @@
 import { Dispatch, FC, SetStateAction } from 'react';
+import { Link, Routes, Route, useLocation } from 'react-router-dom';
 
 import PredictLogoSidebar from '../../../../assets/pics/PredictLogoSidebar.png';
 import WalletIcon from '../../../../assets/appSvgs/WalletIcon';
 import stakingCardData from '../../data/stakingCardData';
 import StakingCard from '../../Components/StakingCard';
-import { Link, Routes, Route, useLocation } from 'react-router-dom';
+import StakingPast from './StakingPast';
 
 interface StakingMainContentProps {
 	isSidebarExpanded: boolean;
@@ -100,6 +101,7 @@ const StakingMainContent: FC<StakingMainContentProps> = ({
 								/>
 							);
 						})}
+						<Route path='/past' element={<StakingPast />} />
 					</Routes>
 				</main>
 			</div>
