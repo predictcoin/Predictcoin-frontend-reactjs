@@ -1,5 +1,5 @@
 import { Dispatch, FC, SetStateAction } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import FarmingIcon from '../../../../assets/appSvgs/FarmingIcon';
 import StakingIcon from '../../../../assets/appSvgs/StakingIcon';
@@ -22,6 +22,8 @@ const Sidebar: FC<SidebarProps> = ({
 	isSidebarExpanded,
 	setIsSidebarExpanded,
 }) => {
+	const { pathname } = useLocation();
+
 	return (
 		<section id='sidebar' className={isSidebarExpanded ? 'expand' : ''}>
 			<nav>
@@ -41,7 +43,7 @@ const Sidebar: FC<SidebarProps> = ({
 					<li>
 						<NavLink
 							to='/app/staking'
-							className={({ isActive }) => (isActive ? 'active' : '')}
+							className={({ isActive }) => (isActive || pathname === '/app' ? 'active' : '')}
 						>
 							<div className='icon'>
 								<StakingIcon />

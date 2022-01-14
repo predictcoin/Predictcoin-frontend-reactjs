@@ -68,7 +68,7 @@
   margin: 2rem;
 }
 
-.ptc__navbar-launch button {
+.ptc__navbar-launch a {
   color: #ffff;
   background: var(--gradient-launch);
   padding: 18px 56px 18px 56px;
@@ -81,7 +81,7 @@
   cursor: pointer;
 }
 
-.ptc__navbar-launch button:hover {
+.ptc__navbar-launch a:hover {
   color: #000;
   background: #ffc451;
   padding: 18px 56px 18px 56px;
@@ -150,7 +150,7 @@
     display: flex;
   }
 
-  .ptc__navbar-launch button {
+  .ptc__navbar-launch a {
     padding: 1px 5px 1px 5px;
     width: 100;
   }
@@ -185,7 +185,7 @@
     display: flex;
   }
 
-  .ptc__navbar-launch button {
+  .ptc__navbar-launch a {
     padding: 5px 10px 5px 10px;
     width: 100;
   }
@@ -226,7 +226,7 @@
     display: flex;
   }
 
-  .ptc__navbar-launch button {
+  .ptc__navbar-launch a {
     padding: 10px 20px 10px 20px;
     width: 100;
   }
@@ -265,7 +265,7 @@
     margin-left: -20rem;
   }
 
-  .ptc__navbar-launch button {
+  .ptc__navbar-launch a {
     padding: 10px 25px 10px 25px;
 
     margin-right: -25rem;

@@ -4,6 +4,7 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 
 import logo from "../../../assets/pics/logoblue.png";
+import { Link } from "react-router-dom";
 
 const Menu = ({ setToggleMenu }: {setToggleMenu: (bool: boolean) => void}) => {
     const [activePage, setActivePage] = useState("market");
@@ -110,13 +111,13 @@ const Navbar = () => {
                 </div>
 
                 <div className="ptc__navbar-launch">
-                    <button type="button">Launch DApp</button>
+                    <Link to="/app">Launch DApp</Link>
                 </div>
             </div>
 
             {/* 
                 <div className="ptc__navbar-launch">
-                <button type="button">Launch DApp</button>
+                <Link to="/app">Launch DApp</Link>
                 </div> 
             */}
 
@@ -143,7 +144,7 @@ const Navbar = () => {
                             <Menu setToggleMenu={setToggleMenu} />
 
                             <div className="ptc__navbar-menu-container-launch">
-                                <button type="button">Launch DApp</button>
+                                <Link to="/app">Launch DApp</Link>
                             </div>
                         </div>
                     </div>

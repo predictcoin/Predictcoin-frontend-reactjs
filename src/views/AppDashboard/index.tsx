@@ -12,7 +12,9 @@ const AppDashboard: FC = () => {
 			<Routes>
 				<Route path='/farming' element={<Farming />} />
 				<Route path='/price-prediction/*' element={<Prediction />} />
-				<Route path='/staking/*' element={<Staking />} />
+				{['/', '/staking/*'].map((path, index) => {
+					return <Route key={index} path={path} element={<Staking />} />;
+				})}
 			</Routes>
 		</div>
 	);
