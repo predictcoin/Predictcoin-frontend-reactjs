@@ -1,33 +1,39 @@
 import { ChangeEvent, FC, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { HiOutlineArrowDown } from 'react-icons/hi';
 
 import PredictLogoSidebar from '../../../../assets/pics/PredictLogoSidebar.png';
-import BUSD from '../../../../assets/pics/BUSD.png';
+// import BUSD from '../../../../assets/pics/BUSD.png';
 import ExportIcon from '../../../../assets/appSvgs/ExportIcon';
-import './farmingcard.styles.scss';
+import { WalletStatus } from '../../models/StakingCardModel';
+import './stakingcard.styles.scss';
 
-interface FarmingCardProps {
+interface StakingCardProps {
 	id: string;
 	tokenName: string;
 	tokenMultiple: string;
 	aprEarned: string;
 	predEarned: number;
+	predStaked: number;
 	totalStaked: number;
+	walletUnlockStatus: WalletStatus.locked | WalletStatus.unlocked;
+	buttonText: string[];
 	contractUrl: string;
 	USDTStaked: number;
-	ctaType: 'unlock' | 'harvest' | 'approve';
 }
 
-const FarmingCard: FC<FarmingCardProps> = ({
+const StakingCard: FC<StakingCardProps> = ({
 	id,
 	tokenName,
 	tokenMultiple,
 	aprEarned,
 	predEarned,
+	predStaked,
 	totalStaked,
+	walletUnlockStatus,
+	buttonText,
 	contractUrl,
 	USDTStaked,
-	ctaType,
 }) => {
 	const [stakedUsdt, setStakedUsdt] = useState<number>(USDTStaked);
 
@@ -50,10 +56,9 @@ const FarmingCard: FC<FarmingCardProps> = ({
 	};
 
 	return (
-		<div className='farming__card'>
-			<div className='farming__card__top'>
+		<div className='staking__card'>
+			<div className='staking__card__top'>
 				<div className='token__images'>
-					<img src={BUSD} alt='busd-logo' />
 					<img src={PredictLogoSidebar} alt='predict-coin-logo' />
 				</div>
 
@@ -62,7 +67,7 @@ const FarmingCard: FC<FarmingCardProps> = ({
 					<p className='multiple'>{tokenMultiple}</p>
 				</div>
 			</div>
-			<div className='farming__card__content'>
+			<div className='staking__card__content'>
 				<div className='price__stake'>
 					<div className='price'>
 						<div className='section'>
@@ -71,50 +76,61 @@ const FarmingCard: FC<FarmingCardProps> = ({
 								<span className='normal'>{aprEarned}</span>
 							</div>
 							<div>
-								<span className='light'>EARNED</span>
+								<span className='light'>STAKE</span>
+								<span className='normal'>{predStaked}</span>
+							</div>
+							<div>
+								<span className='light'>EARN</span>
 								<span className='normal'>{predEarned}</span>
 							</div>
 						</div>
-						<div className='section'>
-							<div>
-								<span className='light'>EARN</span>
-								<span className='normal'>PRED</span>
-							</div>
-							<div>
-								<span className='normal'>~ ${predEarned}</span>
-							</div>
-						</div>
 					</div>
 
-					<div className='border'></div>
-
-					<div className='stake'>
-						<button className='minus' onClick={decreaseStakedUsdt}>
-							<span> - </span>
-						</button>
-						<div className='usdt__staked'>
-							<p>USDT Staked</p>
-							<input
-								type='number'
-								name='usdt-staked'
-								id='usdt-staked'
-								value={stakedUsdt}
-								min={0}
-								max={100}
-								onChange={(e) => validate(e)}
-							/>
+					{walletUnlockStatus === 'unlocked' ? (
+						<div className='stake'>
+							<button className='minus' onClick={decreaseStakedUsdt}>
+								<span> - </span>
+							</button>
+							<div className='usdt__staked'>
+								<p>PRED Staked</p>
+								<input
+									type='number'
+									name='usdt-staked'
+									id='usdt-staked'
+									value={stakedUsdt}
+									min={0}
+									max={100}
+									onChange={(e) => validate(e)}
+								/>
+							</div>
+							<button className='add' onClick={increaseStakedUsdt}>
+								<span> + </span>
+							</button>
 						</div>
-						<button className='add' onClick={increaseStakedUsdt}>
-							<span> + </span>
-						</button>
+					) : (
+						<div className='unlock__text'>
+							<p>unlock wallet to begin staking</p>
+							<HiOutlineArrowDown />
+						</div>
+					)}
+
+					<div
+						className={`action__container ${
+							buttonText.length > 1 ? 'two' : ''
+						}`}
+					>
+						{buttonText.map((text, idx) => (
+							<button
+								className={`action ${text.includes('Unlock') ? 'unlock' : ''} ${
+									text.includes('Harvest') ? 'harvest' : ''
+								}`}
+								key={idx}
+							>
+								{text}
+							</button>
+						))}
 					</div>
 				</div>
-
-				<button className={`action ${ctaType}`}>
-					{ctaType === 'unlock' && 'Unlock Wallet'}
-					{ctaType === 'harvest' && 'Harvest'}
-					{ctaType === 'approve' && 'Approve Contract'}
-				</button>
 
 				<div className='stake__details'>
 					<p>Total staked: ${totalStaked}</p>
@@ -128,4 +144,4 @@ const FarmingCard: FC<FarmingCardProps> = ({
 	);
 };
 
-export default FarmingCard;
+export default StakingCard;

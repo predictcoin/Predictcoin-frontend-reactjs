@@ -11,8 +11,8 @@ const AppDashboard: FC = () => {
 		<div className='app__dashboard'>
 			<Routes>
 				<Route path='/farming' element={<Farming />} />
-				<Route path='/price-prediction' element={<Prediction />} />
-				<Route path='/staking' element={<Staking />} />
+				<Route path='/price-prediction/*' element={<Prediction />} />
+				<Route path='/staking/*' element={<Staking />} />
 			</Routes>
 		</div>
 	);

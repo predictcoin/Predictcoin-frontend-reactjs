@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 
 import Sidebar from '../../Components/Sidebar';
+import StakingMainContent from './StakingMainContent';
 import './staking.styles.scss';
 
 const Staking: FC = () => {
@@ -9,6 +10,10 @@ const Staking: FC = () => {
 	return (
 		<section id='staking'>
 			<Sidebar
+				isSidebarExpanded={isSidebarExpanded}
+				setIsSidebarExpanded={setIsSidebarExpanded}
+			/>
+			<StakingMainContent
 				isSidebarExpanded={isSidebarExpanded}
 				setIsSidebarExpanded={setIsSidebarExpanded}
 			/>

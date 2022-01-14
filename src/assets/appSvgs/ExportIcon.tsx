@@ -1,10 +1,15 @@
 import { FC } from 'react';
 
-const ExportIcon: FC = (props) => {
+interface ExportIconProps {
+	width?: number;
+	height?: number;
+}
+
+const ExportIcon: FC<ExportIconProps> = ({ width, height, ...props }) => {
 	return (
 		<svg
-			width={16}
-			height={16}
+			width={width ?? 16}
+			height={height ?? 16}
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			{...props}

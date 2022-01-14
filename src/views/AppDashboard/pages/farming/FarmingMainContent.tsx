@@ -41,6 +41,7 @@ const FarmingMainContent: FC<FarmingMainContentProps> = ({
 							<img src={PredictLogoSidebar} alt='predict-coin-logo' />
 							<p>25.08 PRED</p>
 						</div>
+						{/* add 'not__connected class if wallet is not connected' */}
 						<button className='address'>
 							<WalletIcon />
 							<span>0x5TD6...4567</span>

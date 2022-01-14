@@ -30,14 +30,14 @@
 					justify-content: center;
 					align-items: center;
 					border: none;
-                    
+
 					&:hover,
 					&:focus {
-                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+						box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 					}
-                    
+
 					&.hamburger {
-                        color: black;
+						color: black;
 						display: none;
 						justify-content: center;
 						align-items: center;
@@ -45,8 +45,8 @@
 						height: 40px;
 						background: #ffffff;
 						border-radius: 8px;
-                        align-self: flex-start;
-                        margin: 2px 18px 18px 0;
+						align-self: flex-start;
+						margin: 2px 18px 18px 0;
 
 						#nav-icon1 {
 							width: 30px;
@@ -194,6 +194,10 @@
 							font-size: 14px;
 							line-height: 21px;
 							color: #ffffff;
+						}
+
+						&.not__connected {
+							background: #c8304d;
 						}
 					}
 				}

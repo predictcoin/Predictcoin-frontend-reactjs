@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 
 import Sidebar from '../../Components/Sidebar';
+import PricePredictionMainContent from './PricePredictionMainContent';
 import './prediction.styles.scss';
 
 const Prediction: FC = () => {
@@ -9,6 +10,10 @@ const Prediction: FC = () => {
 	return (
 		<section id='prediction'>
 			<Sidebar
+				isSidebarExpanded={isSidebarExpanded}
+				setIsSidebarExpanded={setIsSidebarExpanded}
+			/>
+			<PricePredictionMainContent
 				isSidebarExpanded={isSidebarExpanded}
 				setIsSidebarExpanded={setIsSidebarExpanded}
 			/>
