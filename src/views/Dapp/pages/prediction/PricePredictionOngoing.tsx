@@ -54,7 +54,7 @@ const PricePredictionOngoing: FC = () => {
 				<PredictionGraph data={data} />
 			</div>
 			<div className='prediction__details'>
-				<PredictionDetails status={RoundStatus.Ongoing} />
+				<PredictionDetails status={RoundStatus.Ended} />
 			</div>
 		</div>
 	);
