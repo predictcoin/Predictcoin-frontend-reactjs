@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { RiArrowRightDownFill, RiArrowRightUpFill } from 'react-icons/ri';
 import { IoLogoBitcoin } from 'react-icons/io';
 import { FaEthereum } from 'react-icons/fa';
-import { SiLitecoin } from 'react-icons/si';
+import { SiLitecoin, SiDogecoin } from 'react-icons/si';
 import { ResponsiveLine } from '@nivo/line';
 
 import CoinTabDataModel from '../../models/CoinDataModel';
@@ -24,6 +24,7 @@ const CoinTab: FC<CoinTabDataModel> = ({
 				{coinName === 'BTC' && <IoLogoBitcoin />}
 				{coinName === 'ETH' && <FaEthereum />}
 				{coinName === 'LTC' && <SiLitecoin />}
+				{coinName === 'DOGE' && <SiDogecoin />}
 			</div>
 			<div className='coin__details'>
 				<div className='value__name'>

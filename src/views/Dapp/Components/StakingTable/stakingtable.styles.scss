@@ -6,7 +6,6 @@
 	#table {
 		position: relative;
 		display: table;
-		height: 70vh;
 		white-space: nowrap;
 		border-collapse: collapse;
 		text-align: center;
@@ -44,12 +43,19 @@
 				line-height: 21px;
 				color: #ffffff;
 				opacity: 0.2;
+
+				svg {
+					cursor: pointer;
+					transform: scale(1.2);
+					margin-left: 8px;
+				}
 			}
 		}
 
 		.table__body {
 			.table__row {
 				position: relative;
+				height: 10px;
 
 				.table__row__options {
 					position: absolute;
@@ -70,6 +76,7 @@
 					letter-spacing: 0.392857px;
 					text-transform: uppercase;
 					color: #ffffff;
+					padding: 12px 1rem;
 
 					&:nth-child(2) {
 						img {

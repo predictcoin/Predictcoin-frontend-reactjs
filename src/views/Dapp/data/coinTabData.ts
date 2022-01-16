@@ -175,50 +175,7 @@ const coinTabData: CoinTabDataModel[] = [
 	},
 	{
 		id: '5',
-		coinName: 'LTC',
-		currentValue: 380.234,
-		status: Status.UP,
-		riseValue: 39.69,
-		data: [
-			{
-				id: 'Prediction Graph',
-				color: '#fb49c0',
-				data: [
-					{
-						x: '10:59PM',
-						y: 3000,
-					},
-					{
-						x: '11:59PM',
-						y: 3500,
-					},
-					{
-						x: '12:59PM',
-						y: 3700,
-					},
-					{
-						x: '1:59PM',
-						y: 3500,
-					},
-					{
-						x: '2:59PM',
-						y: 3300,
-					},
-					{
-						x: '3:59PM',
-						y: 4000,
-					},
-					{
-						x: '4:59PM',
-						y: 4200,
-					},
-				],
-			},
-		],
-	},
-	{
-		id: '6',
-		coinName: 'LTC',
+		coinName: 'DOGE',
 		currentValue: 380.234,
 		status: Status.UP,
 		riseValue: 39.69,
