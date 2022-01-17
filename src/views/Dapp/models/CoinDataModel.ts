@@ -6,10 +6,6 @@ export enum Status {
 interface CoinTabDataModel {
 	id: string;
 	coinName: string;
-	currentValue: number;
-	status: Status;
-	riseValue?: number;
-	fallValue?: number;
 	data: { id: string; color: string; data: { x: string; y: number }[] }[];
 }
 

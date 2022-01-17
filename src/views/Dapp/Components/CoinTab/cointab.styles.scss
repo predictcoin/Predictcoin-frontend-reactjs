@@ -14,6 +14,11 @@
 		font-size: 24px;
 		color: #494767;
 		margin-right: 18px;
+
+		img {
+			width: 23px;
+			height: 23px;
+		}
 	}
 
 	.coin__details {
@@ -95,14 +100,57 @@
 	}
 
 	&.active {
-		background: linear-gradient(
-			135deg,
-			#f0b90b 0%,
-			#d7a60b 19.24%,
-			#f7931a 68.64%,
-			#fead4c 81.77%,
-			#cf7406 100%
-		);
+		border: none;
+		box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 0px,
+			rgba(255, 255, 255, 0.1) 0px 0px 8px;
+
+		&.bitcoin {
+			background: linear-gradient(
+				135deg,
+				#f0b90b 0%,
+				#d7a60b 19.24%,
+				#f7931a 68.64%,
+				#fead4c 81.77%,
+				#cf7406 100%
+			);
+		}
+
+		&.ethereum {
+			background: linear-gradient(
+				135deg,
+				#c99d66 0%,
+				rgb(133, 137, 138) 19.24%,
+				#3c3c3d 29.24%,
+				#737376 68.64%,
+				#c99d66 90%
+			);
+		}
+
+		&.litecoin {
+			background: linear-gradient(
+				135deg,
+				#b8b8b8 0%,
+				#4ab0df 19.24%,
+				#00aeff 29.24%,
+				#077ab0 68.64%,
+				#4d4d4d 90%
+			);
+		}
+
+		&.dogecoin {
+			background: linear-gradient(
+				135deg,
+				#000000 0%,
+				#cb9800 19.24%,
+				#cb9800 29.24%,
+				#e1b303 68.64%,
+				#000000 90%
+			);
+		}
+
+		&.crypto-com-chain {
+			background: #1a2b58;
+		}
 
 		.coin__logo {
 			color: #fff;

@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction } from 'react';
+import { Dispatch, FC, SetStateAction, useState } from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 
 import coinTabData from '../../data/coinTabData';
@@ -18,6 +18,7 @@ const PricePredictionMainContent: FC<PricePredictionMainContentProps> = ({
 	setIsSidebarExpanded,
 }) => {
 	const { pathname } = useLocation();
+	const [activeCard, setActiveCard] = useState<string>('bitcoin');
 
 	return (
 		<section className='price__prediction__main__content'>
@@ -63,11 +64,9 @@ const PricePredictionMainContent: FC<PricePredictionMainContentProps> = ({
 									key={coin.id}
 									id={coin.id}
 									coinName={coin.coinName}
-									currentValue={coin.currentValue}
-									status={coin.status}
-									riseValue={coin.riseValue}
-									fallValue={coin.fallValue}
 									data={coin.data}
+									active={activeCard === coin.id}
+									setActive={setActiveCard}
 								/>
 							))}
 						</div>
