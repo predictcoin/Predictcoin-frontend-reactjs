@@ -43,7 +43,9 @@ const Sidebar: FC<SidebarProps> = ({
 					<li>
 						<NavLink
 							to='/app/staking'
-							className={({ isActive }) => (isActive || pathname === '/app' ? 'active' : '')}
+							className={({ isActive }) =>
+								isActive || pathname === '/app' ? 'active' : ''
+							}
 						>
 							<div className='icon'>
 								<StakingIcon />
@@ -66,25 +68,31 @@ const Sidebar: FC<SidebarProps> = ({
 					</li>
 					<li>
 						<NavLink
-							to='/app/swap'
-							className={({ isActive }) => (isActive ? 'active' : '')}
+							to='##'
+							className={({ isActive }) => (isActive ? 'active not__available' : '')}
 						>
 							<div className='icon'>
 								<SwapIcon />
 							</div>
-							<span>Swap</span>
+							<div className='coming__soon'>
+								<span>Swap</span>
+								<span className='coming__soon'>Coming soon</span>
+							</div>
 							<div className='border__active'></div>
 						</NavLink>
 					</li>
 					<li>
 						<NavLink
-							to='/app/voting'
-							className={({ isActive }) => (isActive ? 'active' : '')}
+							to='##'
+							className={({ isActive }) => (isActive ? 'active not__available' : '')}
 						>
 							<div className='icon'>
 								<VotingIcon />
 							</div>
-							<span>Voting</span>
+							<div className='coming__soon'>
+								<span>Voting</span>
+								<span className='coming__soon'>Coming soon</span>
+							</div>
 							<div className='border__active'></div>
 						</NavLink>
 					</li>
@@ -102,37 +110,46 @@ const Sidebar: FC<SidebarProps> = ({
 					</li>
 					<li>
 						<NavLink
-							to='/app/predict-bid'
-							className={({ isActive }) => (isActive ? 'active' : '')}
+							to='##'
+							className={({ isActive }) => (isActive ? 'active not__available' : '')}
 						>
 							<div className='icon'>
 								<PredictBidIcon />
 							</div>
-							<span>Predict $BID</span>
+							<div className='coming__soon'>
+								<span>Predict $BID</span>
+								<span className='coming__soon'>Coming soon</span>
+							</div>
 							<div className='border__active'></div>
 						</NavLink>
 					</li>
 					<li>
 						<NavLink
-							to='/app/sport-prediction'
-							className={({ isActive }) => (isActive ? 'active' : '')}
+							to='##'
+							className={({ isActive }) => (isActive ? 'active not__available' : '')}
 						>
 							<div className='icon'>
 								<SportPredictionIcon />
 							</div>
-							<span>Sport Prediction</span>
+							<div className='coming__soon'>
+								<span>Sport Prediction</span>
+								<span className='coming__soon'>Coming soon</span>
+							</div>
 							<div className='border__active'></div>
 						</NavLink>
 					</li>
 					<li>
 						<NavLink
-							to='/app/ipo-icon'
-							className={({ isActive }) => (isActive ? 'active' : '')}
+							to='##'
+							className={({ isActive }) => (isActive ? 'active not__available' : '')}
 						>
 							<div className='icon'>
 								<IPOIcon />
 							</div>
-							<span>IPO</span>
+							<div className='coming__soon'>
+								<span>IPO</span>
+								<span className='coming__soon'>Coming soon</span>
+							</div>
 							<div className='border__active'></div>
 						</NavLink>
 					</li>
