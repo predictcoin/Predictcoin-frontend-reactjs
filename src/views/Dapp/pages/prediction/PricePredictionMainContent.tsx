@@ -7,6 +7,8 @@ import WalletIcon from '../../../../assets/appSvgs/WalletIcon';
 import PredictLogoSidebar from '../../../../assets/pics/PredictLogoSidebar.png';
 import PricePredictionPast from './PricePredictionPast';
 import PricePredictionOngoing from './PricePredictionOngoing';
+import ModalConnect from '../../Components/CustomModal/ModalConnect';
+import ModalDisconnect from '../../Components/CustomModal/ModalDisconnect';
 
 interface PricePredictionMainContentProps {
 	isSidebarExpanded: boolean;
@@ -19,9 +21,12 @@ const PricePredictionMainContent: FC<PricePredictionMainContentProps> = ({
 }) => {
 	const { pathname } = useLocation();
 	const [activeCard, setActiveCard] = useState<string>('bitcoin');
+	const [modalOpened, setModalOpened] = useState<boolean>(false);
 
 	return (
 		<section className='price__prediction__main__content'>
+			{modalOpened && <ModalConnect closeModal={() => setModalOpened(false)}/>}
+
 			<div className='container'>
 				<header>
 					<button
@@ -48,7 +53,7 @@ const PricePredictionMainContent: FC<PricePredictionMainContentProps> = ({
 							<p>25.08 PRED</p>
 						</div>
 						{/* add 'not__connected class if wallet is not connected' */}
-						<button className='address not__connected'>
+						<button className='address not__connected' onClick={() => setModalOpened(true)}>
 							<WalletIcon />
 							<span>Connect Wallet</span>
 						</button>

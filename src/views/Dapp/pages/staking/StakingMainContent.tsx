@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction } from 'react';
+import { Dispatch, FC, SetStateAction, useState } from 'react';
 import { Link, Routes, Route, useLocation } from 'react-router-dom';
 
 import PredictLogoSidebar from '../../../../assets/pics/PredictLogoSidebar.png';
@@ -6,6 +6,8 @@ import WalletIcon from '../../../../assets/appSvgs/WalletIcon';
 import stakingCardData from '../../data/stakingCardData';
 import StakingCard from '../../Components/StakingCard';
 import StakingPast from './StakingPast';
+import ModalConnect from '../../Components/CustomModal/ModalConnect';
+import ModalDisconnect from '../../Components/CustomModal/ModalDisconnect';
 
 interface StakingMainContentProps {
 	isSidebarExpanded: boolean;
@@ -17,9 +19,12 @@ const StakingMainContent: FC<StakingMainContentProps> = ({
 	setIsSidebarExpanded,
 }) => {
 	const { pathname } = useLocation();
+	const [modalOpened, setModalOpened] = useState<boolean>(false);
 
 	return (
 		<section className='staking__main__content'>
+			{modalOpened && <ModalDisconnect closeModal={() => setModalOpened(false)}/>}
+
 			<div className='container'>
 				<header>
 					<button
@@ -46,7 +51,7 @@ const StakingMainContent: FC<StakingMainContentProps> = ({
 							<p>25.08 PRED</p>
 						</div>
 						{/* add 'not__connected class if wallet is not connected' */}
-						<button className='address'>
+						<button className='address' onClick={() => setModalOpened(true)}>
 							<WalletIcon />
 							<span>0x5TD6...4567</span>
 						</button>
