@@ -1,4 +1,3 @@
-import React from "react";
 import "./Home.css";
 
 import Header from "./header";
@@ -8,20 +7,20 @@ import Market from "./market";
 import RoadMap from "./roadmap";
 import Navbar from "./navbar";
 import WhitePaper from "./whitepaper";
-import Audit from "./audit";
 import Partner from "./partner";
 import FAQ from "./FAQ";
 
-function App() {
+
+function Home() {
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <Header />
       <Market />
       <div className="gradient__bg">
         <About />
         <WhitePaper />
-        <Audit />
         <RoadMap />
       </div>
       <Partner />
@@ -31,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

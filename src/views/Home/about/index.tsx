@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import './about.css';
 
 import frame from '../../../assets/pics/Frame.png';
@@ -6,11 +7,10 @@ import database from '../../../assets/icons/database.png';
 import headphones from '../../../assets/icons/headphones.png';
 import dollar_sign from '../../../assets/icons/dollar-sign.png';
 
-
 const About = () => {
     return (
-        <>
-            <div className='ptc__about content__padding' id='about'>
+        <div id="about">
+            <div className='ptc__about content__padding'>
                 <div className='ptc__about-content'>
                     <div>
                         <h1>About Predictcoin</h1>
@@ -23,9 +23,9 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='ptc__about-card content__padding'>
+            <div className='ptc__about-card'>
                 {/* First Card */}
-                <div className='ptc__about-card_content'>
+                <div className='ptc__about-card_content' id='first__card'>
                     <div className="database__icon">
                         <img src={database} alt="database_icon" />
                     </div>
@@ -45,7 +45,7 @@ const About = () => {
                 </div>
 
                 {/* Third Card */}
-                <div className='ptc__about-card_content'>
+                <div className='ptc__about-card_content' id="third_card">
                     <div className="database__icon">
                         <img src={dollar_sign} alt="database_icon" />
                     </div>
@@ -54,7 +54,7 @@ const About = () => {
                     <p>Predictcoin provides a lifetime passive income for stakers & farmers as detailed on our Whitepaper. Predictors also earn free PRED once they attain a certain level of experience.</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
